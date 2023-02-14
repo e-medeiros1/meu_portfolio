@@ -18,10 +18,14 @@ class PortifolioHeader extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Center(
-                child: Text('Placeholder',
-                    style: context.textStyles.textBold
-                        .copyWith(color: context.colors.light, fontSize: 50)),
+              Padding(
+                padding: const EdgeInsets.only(left: 25),
+                child: FadeInImage.assetNetwork(
+                  image: 'assets/images/myLogo.png',
+                  placeholder: 'assets/images/transparent.png',
+                  height: context.percentHeight(.09),
+                  fit: BoxFit.scaleDown,
+                ),
               ),
               Row(
                 children: [
