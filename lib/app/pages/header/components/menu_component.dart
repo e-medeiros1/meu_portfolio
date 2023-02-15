@@ -6,6 +6,7 @@ class MenuComponent extends StatefulWidget {
   const MenuComponent({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MenuComponentState createState() => _MenuComponentState();
 }
 
@@ -40,7 +41,7 @@ class _MenuComponentState extends State<MenuComponent> {
         ],
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: List.generate(
           menuComponentItems.length,
           (index) => buildMenuComponentItem(index),
@@ -68,7 +69,7 @@ class _MenuComponentState extends State<MenuComponent> {
             children: [
               Text(
                 menuComponentItems[index],
-                style: TextStyle(fontSize: 20, color: context.colors.light),
+                style: TextStyle(fontSize: 19, color: context.colors.light),
               ),
               // Hover
               AnimatedPositioned(
