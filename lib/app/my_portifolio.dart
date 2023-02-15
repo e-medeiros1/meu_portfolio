@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
+import 'package:my_portifolio/app/pages/about/portifolio_about.dart';
 import 'package:my_portifolio/app/pages/footer/portifolio_footer.dart';
 import 'package:my_portifolio/app/pages/header/portifolio_header.dart';
 import 'package:my_portifolio/app/pages/projects/portifolio_projects.dart';
@@ -29,6 +30,7 @@ class LandingPage extends StatelessWidget {
         child: Column(
           children: const [
             PortifolioHeader(),
+            PortifolioAbout(),
             PortifolioStacks(),
             PortifolioProjects(),
             PortifolioFooter(),
