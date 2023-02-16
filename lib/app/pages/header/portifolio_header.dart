@@ -22,7 +22,7 @@ class PortifolioHeader extends StatelessWidget {
       ),
       child: Container(
         margin: EdgeInsets.only(top: context.percentHeight(.05)),
-        width: 1200,
+        width: 1110,
         child: Stack(
           children: const [
             LogoAndBlurBox(),
