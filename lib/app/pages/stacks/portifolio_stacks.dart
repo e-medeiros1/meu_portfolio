@@ -1,10 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:my_portifolio/app/core/helper/size_extensios.dart';
+import 'package:my_portifolio/app/models/stacks_model.dart';
+import 'package:my_portifolio/app/pages/stacks/components/stacks_card.dart';
+import 'package:my_portifolio/app/pages/stacks/components/stacks_title.dart';
 
-class PortifolioStacks extends StatelessWidget {
+class PortifolioStacks extends StatefulWidget {
   const PortifolioStacks({super.key});
 
   @override
+  State<PortifolioStacks> createState() => _PortifolioStacksState();
+}
+
+class _PortifolioStacksState extends State<PortifolioStacks> {
+  @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: context.percentHeight(.05)),
+      constraints: const BoxConstraints(maxWidth: 1110),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const StackTitle(title: 'Stacks'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: List.generate(
+                stacksModel.length, (index) => StacksCard(index: index)),
+          ),
+        ],
+      ),
+    );
   }
 }
