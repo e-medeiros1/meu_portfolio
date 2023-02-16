@@ -57,13 +57,11 @@ class LogoAndBlurBox extends StatelessWidget {
               fit: BoxFit.cover,
               height: context.percentHeight(.1),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 90),
-              child: Icon(
-                Icons.sunny,
-                color: context.colors.light,
-                size: context.percentHeight(.05),
-              ),
+            const Spacer(),
+            Icon(
+              Icons.sunny,
+              color: context.colors.light,
+              size: context.percentHeight(.05),
             )
           ],
         ),

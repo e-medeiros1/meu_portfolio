@@ -21,10 +21,15 @@ class _PortifolioStacksState extends State<PortifolioStacks> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const StackTitle(title: 'Stacks'),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: List.generate(
-                stacksModel.length, (index) => StacksCard(index: index)),
+          SingleChildScrollView(
+            padding:
+                EdgeInsets.symmetric(horizontal: context.percentWidth(.025)),
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: List.generate(
+                  stacksModel.length, (index) => StacksCard(index: index)),
+            ),
           ),
         ],
       ),
