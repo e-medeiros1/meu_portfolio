@@ -13,7 +13,7 @@ class AboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.025)),
+      padding: EdgeInsets.only(right: context.percentWidth(.03), top: 20),
       child: Text(
         softWrap: true,
         text,

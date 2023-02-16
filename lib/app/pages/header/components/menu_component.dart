@@ -14,7 +14,6 @@ class _MenuComponentState extends State<MenuComponent> {
   int selectedIndex = 0;
   int hoverIndex = 0;
   List<String> menuComponentItems = [
-    "Home",
     "Sobre",
     "Stacks",
     "Projetos",

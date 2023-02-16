@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
+import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/pages/header/components/menu_component.dart';
 
 import 'components/glass_component.dart';
@@ -46,12 +47,25 @@ class LogoAndBlurBox extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FadeInImage.assetNetwork(
-          image: 'assets/images/mylogo.png',
-          placeholder: 'assets/images/transparent.png',
-          placeholderFit: BoxFit.cover,
-          fit: BoxFit.cover,
-          height: context.percentHeight(.1),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            FadeInImage.assetNetwork(
+              image: 'assets/images/mylogo.png',
+              placeholder: 'assets/images/transparent.png',
+              placeholderFit: BoxFit.cover,
+              fit: BoxFit.cover,
+              height: context.percentHeight(.1),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(right: 90),
+              child: Icon(
+                Icons.sunny,
+                color: context.colors.light,
+                size: context.percentHeight(.05),
+              ),
+            )
+          ],
         ),
         const Spacer(),
         const GlassComponent(),
