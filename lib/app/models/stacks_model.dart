@@ -17,5 +17,5 @@ List<StacksModel> stacksModel = [
   // StacksModel(
   //     id: 4, image: 'assets/images/firestore.png', title: 'Cloud Firestore'),
   StacksModel(id: 4, image: 'assets/images/git.png', title: 'Git'),
-  StacksModel(id: 6, image: 'assets/images/github.png', title: 'Github'),
+  StacksModel(id: 6, image: 'assets/images/github2.png', title: 'Github'),
 ];

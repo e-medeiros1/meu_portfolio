@@ -3,9 +3,9 @@ import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
 
-class StackTitle extends StatelessWidget {
+class SectionTitle extends StatelessWidget {
   final String title;
-  const StackTitle({
+  const SectionTitle({
     required this.title,
     super.key,
   });
