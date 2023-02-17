@@ -3,9 +3,9 @@ import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
 
-class AboutMe extends StatelessWidget {
+class AboutMeText extends StatelessWidget {
   final String text;
-  const AboutMe({
+  const AboutMeText({
     Key? key,
     required this.text,
   }) : super(key: key);

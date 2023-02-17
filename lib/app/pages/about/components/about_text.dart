@@ -3,30 +3,20 @@ import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
 
-class AboutText extends StatelessWidget {
-  const AboutText({
+class AboutMeTitle extends StatelessWidget {
+  const AboutMeTitle({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text(
-          'Sobre mim',
-          textAlign: TextAlign.center,
-          style: context.textStyles.textExtraBold
-              .copyWith(color: context.colors.light, fontSize: 50),
-        ),
-        SizedBox(height: context.percentHeight(.025)),
-        Image.asset(
-          'assets/images/oldComputer.gif',
-          fit: BoxFit.scaleDown,
-          height: context.percentHeight(.45),
-        )
-      ],
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.05)),
+      child: Text(
+        'Sobre mim',
+        style: context.textStyles.textExtraBold
+            .copyWith(color: context.colors.light, fontSize: 50),
+      ),
     );
   }
 }

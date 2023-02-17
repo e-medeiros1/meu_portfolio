@@ -18,7 +18,7 @@ class StacksCard extends StatefulWidget {
 
 class _StacksCardState extends State<StacksCard> {
   bool isHover = false;
-  Duration duration = const Duration(milliseconds: 200);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -33,10 +33,10 @@ class _StacksCardState extends State<StacksCard> {
         },
         hoverColor: Colors.transparent,
         child: AnimatedContainer(
-          duration: duration,
+          duration: const Duration(milliseconds: 200),
           padding: EdgeInsets.symmetric(vertical: context.percentHeight(.025)),
-          height: 200,
-          width: 200,
+          height: 220,
+          width: 220,
           decoration: BoxDecoration(
               color: context.colors.dark,
               borderRadius: BorderRadius.circular(10),
@@ -49,8 +49,7 @@ class _StacksCardState extends State<StacksCard> {
               ]),
           child: Column(
             children: [
-              AnimatedContainer(
-                duration: duration,
+              Container(
                 padding: EdgeInsets.all(context.percentHeight(.02)),
                 height: 110,
                 width: 110,
