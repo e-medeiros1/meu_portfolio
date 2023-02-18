@@ -10,7 +10,6 @@ class PortifolioStacks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // margin: EdgeInsets.symmetric(vertical: context.percentHeight(.05)),
       constraints: const BoxConstraints(maxWidth: 1110),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

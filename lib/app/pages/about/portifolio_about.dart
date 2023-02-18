@@ -13,7 +13,7 @@ class PortifolioAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: context.percentHeight(.1)),
+      padding: EdgeInsets.all(context.percentHeight(.1)),
       margin: EdgeInsets.symmetric(horizontal: context.percentWidth(.05)),
       constraints: const BoxConstraints(maxWidth: 1110),
       child: Column(
@@ -29,7 +29,6 @@ class PortifolioAbout extends StatelessWidget {
               text: 'Baixar currículo',
             ),
           ),
-          SizedBox(height: context.percentHeight(.1)),
         ],
       ),
     );

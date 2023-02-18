@@ -5,6 +5,8 @@ import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
 
+import '../../footer/components/buttons_row.dart';
+
 class GlassComponent extends StatelessWidget {
   const GlassComponent({
     super.key,
@@ -20,11 +22,9 @@ class GlassComponent extends StatelessWidget {
           decoration: BoxDecoration(
             image: const DecorationImage(
               alignment: Alignment.bottomRight,
-              image: AssetImage(
-                'assets/images/profile.png',
-              ),
+              image: AssetImage('assets/images/profile.png'),
             ),
-            color: context.colors.light.withOpacity(0.01),
+            color: context.colors.light.withOpacity(0.05),
           ),
           padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.05)),
           constraints: BoxConstraints(
@@ -44,12 +44,14 @@ class GlassComponent extends StatelessWidget {
                     letterSpacing: -.5),
               ),
               Text(
-                'Desenvolvedor Flutter',
+                'Desenvolvedor mobile Flutter',
                 style: context.textStyles.textRegular.copyWith(
-                    fontSize: 50,
+                    fontSize: 45,
                     color: context.colors.light,
                     letterSpacing: -.5),
               ),
+              const SizedBox(height: 10),
+              const ButtonsRow(),
             ],
           ),
         ),

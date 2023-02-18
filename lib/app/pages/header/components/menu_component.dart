@@ -33,8 +33,8 @@ class _MenuComponentState extends State<MenuComponent> {
         ),
         boxShadow: [
           BoxShadow(
-            offset: const Offset(0, 50),
-            blurRadius: 50,
+            offset: const Offset(0, 40),
+            blurRadius: 40,
             color: context.colors.light.withOpacity(.1),
           ),
         ],
