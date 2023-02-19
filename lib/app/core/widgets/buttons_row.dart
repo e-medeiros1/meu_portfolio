@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:my_portifolio/app/controller/url_launcher_controller.dart';
-import 'package:my_portifolio/app/pages/footer/components/social_media_buttons.dart';
+import 'package:my_portifolio/app/core/widgets/social_media_buttons.dart';
 
 class ButtonsRow extends StatelessWidget {
   const ButtonsRow({super.key});

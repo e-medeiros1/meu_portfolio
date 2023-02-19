@@ -5,7 +5,7 @@ import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
 
-import '../../footer/components/buttons_row.dart';
+import '../../../core/widgets/buttons_row.dart';
 
 class GlassComponent extends StatelessWidget {
   const GlassComponent({

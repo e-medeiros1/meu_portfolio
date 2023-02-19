@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
-import 'package:my_portifolio/app/core/styles/text_styles.dart';
-import 'package:my_portifolio/app/pages/footer/components/social_media_buttons.dart';
 
-import 'components/buttons_row.dart';
+import '../../core/widgets/buttons_row.dart';
+import 'components/footer_text.dart';
 
 class PortifolioFooter extends StatelessWidget {
   const PortifolioFooter({super.key});
@@ -28,18 +26,9 @@ class PortifolioFooter extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                   ButtonsRow(),
+                    const ButtonsRow(),
                     const Spacer(),
-                    Text.rich(
-                        style: context.textStyles.textRegular
-                            .copyWith(color: colorLight, fontSize: 20),
-                        const TextSpan(children: [
-                          TextSpan(text: 'Feito com Flutter por '),
-                          TextSpan(
-                              text: '@erimedeiros ',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline)),
-                        ]))
+                    FooterText(colorLight: colorLight)
                   ],
                 )),
           ],
