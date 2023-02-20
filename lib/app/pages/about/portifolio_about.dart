@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/widgets/my_outlined_button.dart';
 
@@ -23,9 +24,9 @@ class PortifolioAbout extends StatelessWidget {
           const AboutSection(),
           Center(
             child: MyOutlinedButton(
-              onPressed: () {},
+              onPressed: () => Get.toNamed('/pdf'),
               imageSrc: 'assets/images/download.png',
-              text: 'Baixar currículo',
+              text: 'Ver currículo',
             ),
           ),
         ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
+import 'package:my_portifolio/app/cv_view/cv_viewer.dart';
 import 'package:my_portifolio/app/pages/about/portifolio_about.dart';
 import 'package:my_portifolio/app/pages/footer/portifolio_footer.dart';
 import 'package:my_portifolio/app/pages/header/portifolio_header.dart';
@@ -11,10 +13,14 @@ class MyPortifolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return GetMaterialApp(
       title: 'Meu portifólio',
       debugShowCheckedModeBanner: false,
-      home: LandingPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LandingPage(),
+        '/pdf': (context) => const CvViewer(),
+      },
     );
   }
 }
