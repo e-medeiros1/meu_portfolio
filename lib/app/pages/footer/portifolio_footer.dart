@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
+import 'package:my_portifolio/app/pages/header/components/menu_component.dart';
 
 import '../../core/widgets/buttons_row.dart';
-import 'components/footer_text.dart';
 
 class PortifolioFooter extends StatelessWidget {
   const PortifolioFooter({super.key});
@@ -24,11 +24,11 @@ class PortifolioFooter extends StatelessWidget {
             SizedBox(
                 width: 1110,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const ButtonsRow(),
-                    const Spacer(),
-                    FooterText(colorLight: colorLight)
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    MenuComponent(),
+                    Spacer(),
+                    ButtonsRow(),
                   ],
                 )),
           ],
