@@ -38,6 +38,8 @@ class _StacksCardState extends State<StacksCard> {
           height: 220,
           width: 220,
           decoration: BoxDecoration(
+              border: Border.all(
+                  color: context.colors.light.withOpacity(.1), width: .5),
               color: context.colors.dark,
               borderRadius: BorderRadius.circular(10),
               boxShadow: [

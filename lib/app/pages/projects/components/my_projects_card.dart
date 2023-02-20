@@ -40,14 +40,16 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
           height: 320,
           width: 500,
           decoration: BoxDecoration(
+              border: Border.all(
+                  color: context.colors.light.withOpacity(.1), width: .5),
               borderRadius: BorderRadius.circular(10),
               color: context.colors.dark,
               boxShadow: [
                 if (isHover)
-                BoxShadow(
-                    offset: const Offset(0, 40),
-                    blurRadius: 40,
-                    color: context.colors.light.withOpacity(.1)),
+                  BoxShadow(
+                      offset: const Offset(0, 40),
+                      blurRadius: 40,
+                      color: context.colors.light.withOpacity(.1)),
               ]),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
