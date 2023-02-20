@@ -18,9 +18,8 @@ class FooterText extends StatelessWidget {
         children: [
           TextSpan(text: 'Feito com Flutter por '),
           TextSpan(
-              text: '@erimedeiros ',
-              style: TextStyle(
-                  decoration: TextDecoration.underline)),
+              text: '@erimedeiros',
+              style: TextStyle(decoration: TextDecoration.underline)),
         ],
       ),
     );

@@ -83,7 +83,6 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                       ),
                       const SizedBox(height: 30),
                       MyOutlinedButton(
-                          color: context.colors.light,
                           onPressed: widget.onPressed,
                           imageSrc: 'assets/images/github2.png',
                           text: 'Ver repositório'),

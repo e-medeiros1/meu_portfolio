@@ -14,7 +14,8 @@ class ButtonsRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         SocialMediaButtons(
-            onPressed: () => instance.launchInWeb(instance.toGithub), icon: FontAwesomeIcons.github),
+            onPressed: () => instance.launchInWeb(instance.toGithub),
+            icon: FontAwesomeIcons.github),
         SocialMediaButtons(
             onPressed: () => instance.launchInWeb(instance.toLinkedin),
             icon: FontAwesomeIcons.linkedin),

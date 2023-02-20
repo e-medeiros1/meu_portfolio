@@ -13,8 +13,8 @@ class SectionTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.only(left: context.percentWidth(.041)),
-        margin: EdgeInsets.symmetric(vertical: context.percentHeight(.025)),
+        padding: EdgeInsets.only(left: context.percentWidth(.01)),
+        // margin: EdgeInsets.symmetric(vertical: context.percentHeight(.025)),
         constraints: const BoxConstraints(maxWidth: 1110),
         height: 100,
         child: Text(

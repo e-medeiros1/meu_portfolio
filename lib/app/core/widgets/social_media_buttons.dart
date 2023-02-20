@@ -18,6 +18,8 @@ class SocialMediaButtons extends StatelessWidget {
         onPressed: onPressed,
         icon: FaIcon(icon),
         color: context.colors.light.withOpacity(.8),
-        iconSize: 25);
+        iconSize: 25,
+        alignment: Alignment.centerLeft,
+        padding: EdgeInsets.zero);
   }
 }
