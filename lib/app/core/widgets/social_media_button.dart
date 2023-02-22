@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 
-class SocialMediaButtons extends StatelessWidget {
+class SocialMediaButton extends StatelessWidget {
   final VoidCallback onPressed;
   final IconData? icon;
-  const SocialMediaButtons({
+  const SocialMediaButton({
     Key? key,
     required this.onPressed,
     required this.icon,

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
-import 'package:my_portifolio/app/pages/header/components/menu_component.dart';
+import 'package:my_portifolio/app/core/widgets/my_outlined_button.dart';
 
-import '../../core/widgets/buttons_row.dart';
+import '../../core/widgets/social_media_row.dart';
 
 class PortifolioFooter extends StatelessWidget {
   const PortifolioFooter({super.key});
@@ -25,10 +25,17 @@ class PortifolioFooter extends StatelessWidget {
                 width: 1110,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    MenuComponent(),
-                    Spacer(),
-                    ButtonsRow(),
+                  children: [
+                    MyOutlinedButton(
+                        onPressed: () {},
+                        image: Icon(
+                          Icons.keyboard_arrow_up,
+                          size: context.percentHeight(.04),
+                          color: context.colors.light,
+                        ),
+                        text: 'Voltar para o topo'),
+                    const Spacer(),
+                    const SocialMediaRow(),
                   ],
                 )),
           ],

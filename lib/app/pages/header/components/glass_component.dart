@@ -5,7 +5,7 @@ import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
 
-import '../../../core/widgets/buttons_row.dart';
+import '../../../core/widgets/social_media_row.dart';
 
 class GlassComponent extends StatelessWidget {
   const GlassComponent({
@@ -21,9 +21,9 @@ class GlassComponent extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             image: const DecorationImage(
-              alignment: Alignment.bottomRight,
-              image: AssetImage('assets/images/profile.png'),
-            ),
+                alignment: Alignment.bottomRight,
+                image: AssetImage('assets/images/profile.png'),
+                opacity: .9),
             color: context.colors.light.withOpacity(0.05),
           ),
           padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.05)),
@@ -51,7 +51,7 @@ class GlassComponent extends StatelessWidget {
                     letterSpacing: -.5),
               ),
               const SizedBox(height: 10),
-              const ButtonsRow(),
+              const SocialMediaRow(),
             ],
           ),
         ),

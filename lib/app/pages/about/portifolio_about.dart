@@ -25,7 +25,7 @@ class PortifolioAbout extends StatelessWidget {
           Center(
             child: MyOutlinedButton(
               onPressed: () => Get.toNamed('/pdf'),
-              imageSrc: 'assets/images/download.png',
+              image: Image.asset('assets/images/download.png',  height: context.percentHeight(.04)),
               text: 'Ver currículo',
             ),
           ),
