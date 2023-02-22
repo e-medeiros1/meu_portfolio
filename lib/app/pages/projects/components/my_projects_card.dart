@@ -1,18 +1,22 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
 
 import '../../../core/widgets/my_outlined_button.dart';
-import '../../../models/projects_model.dart';
 
 class MyProjectsCard extends StatefulWidget {
-  final int index;
+  final String title;
+  final String description;
   final VoidCallback onPressed;
+  final String imageSrc;
   const MyProjectsCard({
     Key? key,
-    required this.index,
+    required this.title,
+    required this.description,
     required this.onPressed,
+    required this.imageSrc,
   }) : super(key: key);
 
   @override
@@ -56,7 +60,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
             children: [
               const SizedBox(width: 10),
               Image.asset(
-                myProjects[widget.index].image,
+                widget.imageSrc,
                 width: 220,
                 fit: BoxFit.cover,
               ),
@@ -70,7 +74,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        myProjects[widget.index].title.toUpperCase(),
+                        widget.title.toUpperCase(),
                         style: context.textStyles.textSemiBold.copyWith(
                             fontSize: 20,
                             color: context.colors.light,
@@ -78,7 +82,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                       ),
                       const SizedBox(height: 30),
                       Text(
-                        myProjects[widget.index].description,
+                        widget.description,
                         textAlign: TextAlign.center,
                         style: context.textStyles.textRegular.copyWith(
                             fontSize: 18, color: context.colors.light),
@@ -86,7 +90,8 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                       const SizedBox(height: 30),
                       MyOutlinedButton(
                           onPressed: widget.onPressed,
-                          imageSrc: 'assets/images/github2.png',
+                          image: Image.asset('assets/images/github2.png',
+                              height: context.percentHeight(.035)),
                           text: 'Ver repositório'),
                     ],
                   ),
