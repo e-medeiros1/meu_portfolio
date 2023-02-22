@@ -9,12 +9,14 @@ import '../../../core/widgets/my_outlined_button.dart';
 class MyProjectsCard extends StatefulWidget {
   final String title;
   final String description;
+  final String extendedDescription;
   final VoidCallback onPressed;
   final String imageSrc;
   const MyProjectsCard({
     Key? key,
     required this.title,
     required this.description,
+    required this.extendedDescription,
     required this.onPressed,
     required this.imageSrc,
   }) : super(key: key);
@@ -64,39 +66,52 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                 width: 220,
                 fit: BoxFit.cover,
               ),
-              Expanded(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: context.percentWidth(.025),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        widget.title.toUpperCase(),
-                        style: context.textStyles.textSemiBold.copyWith(
-                            fontSize: 20,
-                            color: context.colors.light,
-                            height: 1.5),
+              !isHover
+                  ? Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: context.percentWidth(.025),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              widget.title.toUpperCase(),
+                              style: context.textStyles.textSemiBold.copyWith(
+                                  fontSize: 20,
+                                  color: context.colors.light,
+                                  height: 1.5),
+                            ),
+                            const SizedBox(height: 30),
+                            Text(
+                              widget.description,
+                              textAlign: TextAlign.center,
+                              style: context.textStyles.textRegular.copyWith(
+                                  fontSize: 18, color: context.colors.light),
+                            ),
+                            const SizedBox(height: 30),
+                            MyOutlinedButton(
+                                onPressed: widget.onPressed,
+                                image: Image.asset('assets/images/github2.png',
+                                    height: context.percentHeight(.035)),
+                                text: 'Ver repositório'),
+                          ],
+                        ),
                       ),
-                      const SizedBox(height: 30),
-                      Text(
-                        widget.description,
-                        textAlign: TextAlign.center,
-                        style: context.textStyles.textRegular.copyWith(
-                            fontSize: 18, color: context.colors.light),
+                    )
+                  : Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: context.percentWidth(.025)),
+                        child: Text(
+                          widget.extendedDescription,
+                          textAlign: TextAlign.center,
+                          style: context.textStyles.textRegular.copyWith(
+                              fontSize: 18, color: context.colors.light),
+                        ),
                       ),
-                      const SizedBox(height: 30),
-                      MyOutlinedButton(
-                          onPressed: widget.onPressed,
-                          image: Image.asset('assets/images/github2.png',
-                              height: context.percentHeight(.035)),
-                          text: 'Ver repositório'),
-                    ],
-                  ),
-                ),
-              )
+                    ),
             ],
           ),
         ),

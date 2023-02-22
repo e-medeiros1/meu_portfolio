@@ -30,14 +30,16 @@ class PortifolioProjects extends StatelessWidget {
                   MyProjectsCard(
                       title: 'Ruined Kigdom',
                       description:
-                          'Um jogo feito em flutter utilizando o package Bonfire baseado no gênero Soulslike',
+                          'Um jogo feito em flutter inspirado no gênero Soulslike',
+                      extendedDescription: 'Utilizado o package brasileiro Bonfire, baseado na documentação e com assets da comunidade',
                       onPressed: () => instance
                           .launchInWeb('${instance.toGithub}ruined_kingdom'),
                       imageSrc: 'assets/images/ruinedKingdom.png'),
                   MyProjectsCard(
                       title: 'Só Saladas',
                       description:
-                          'Delivery app de saladas com interface intuitiva',
+                          'Aplicativo para delivery de saladas com interface intuitiva',
+                      extendedDescription: 'Utilizado padrão de projeto MVC, BloC, shared Preferences, Integração com Json rest server, provider, singletons e diversos packages auxiliares',
                       onPressed: () => instance
                           .launchInWeb('${instance.toGithub}so_saladas'),
                       imageSrc: 'assets/images/soSaladas.png'),
@@ -45,12 +47,16 @@ class PortifolioProjects extends StatelessWidget {
                       title: 'Exclusive Diary',
                       description:
                           'Faça anotações sobre seu dia de forma fácil',
+                      extendedDescription: 'Utilizado conceitos de clean code, integração com firebase para login e criação de conta, gerência de estado com GetX e Cloud Firestore para armazenamento de dados',
                       onPressed: () => instance
                           .launchInWeb('${instance.toGithub}exclusive_diary'),
                       imageSrc: 'assets/images/exclusiveDiary.png'),
                   MyProjectsCard(
                       title: 'Vakinha Burguer',
-                      description: 'Delivery app de lanches com pix integrado',
+                      description:
+                          'Aplicativo para delivery de lanches com pix integrado',
+                      extendedDescription:
+                          'Utilizado padrão MVVM, gerência de estado com GetX e implementação de pix da GerenciaNet!',
                       onPressed: () => instance
                           .launchInWeb('${instance.toGithub}vakinha_burguer'),
                       imageSrc: 'assets/images/vakinhaBurger.png'),
