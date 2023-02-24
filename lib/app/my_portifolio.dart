@@ -8,14 +8,22 @@ import 'package:my_portifolio/app/pages/header/portifolio_header.dart';
 import 'package:my_portifolio/app/pages/projects/portifolio_projects.dart';
 import 'package:my_portifolio/app/pages/stacks/portifolio_stacks.dart';
 
+import 'core/translations/app_translations.dart';
+
 class MyPortifolio extends StatelessWidget {
   const MyPortifolio({super.key});
 
   @override
   Widget build(BuildContext context) {
+// final isLight = SchedulerBinding.instance.window.platformBrightness == Brightness.light;
+    
     return GetMaterialApp(
       title: 'Meu portifólio',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(),
+      translations: AppTranslations(),
+      locale: const Locale('pt', 'BR'),
+      darkTheme: ThemeData.dark(),
       initialRoute: '/',
       routes: {
         '/': (context) => const LandingPage(),

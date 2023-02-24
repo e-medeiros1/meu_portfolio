@@ -1,55 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 
 import 'glass_component.dart';
-import 'my_menu.dart';
+import 'my_dropdown_menu.dart';
 
-class LogoAndBlurBox extends StatelessWidget {
+class LogoAndBlurBox extends StatefulWidget {
   const LogoAndBlurBox({
     super.key,
   });
 
   @override
+  State<LogoAndBlurBox> createState() => _LogoAndBlurBoxState();
+}
+
+class _LogoAndBlurBoxState extends State<LogoAndBlurBox> {
+  final selectedValue = 'PT'.obs;
+  @override
   Widget build(BuildContext context) {
+    final listLanguage = ['PT', 'EN'];
+    final isPortuguese = false.obs;
+    final isEnglish = false.obs;
+
     return LayoutBuilder(
       builder: (_, constraints) => Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
                   'assets/images/personlogo.png',
                   color: context.colors.light,
                   fit: BoxFit.cover,
-                  height: context.percentHeight(.15),
+                  height: context.percentHeight(.17),
                 ),
-                const Spacer(),
-                if (constraints.maxWidth > 700)
-                  const Padding(
-                    padding: EdgeInsets.only(top: 10),
-                    child: MyMenu(),
-                  ),
-                const SizedBox(width: 50),
-                IconButton(
-                  //Set theme here
-                  onPressed: () {},
-                  icon: Icon(Icons.sunny, size: context.percentHeight(.05)),
-                  color: context.colors.light,
-                )
+                MyDropdownMenu(
+                    listLanguage: listLanguage,
+                    selectedValue: selectedValue,
+                    isPortuguese: isPortuguese,
+                    isEnglish: isEnglish)
               ],
             ),
           ),
           const Spacer(),
-          if (constraints.maxWidth < 700)
-            Padding(
-              padding: EdgeInsets.only(bottom: context.percentHeight(.07)),
-              child: const MyMenu(),
-            ),
           const GlassComponent(),
           const Spacer(flex: 3),
         ],

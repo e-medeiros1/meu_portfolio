@@ -19,7 +19,7 @@ class PortifolioProjects extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SectionTitle(title: 'Projetos'),
+          SectionTitle(title: 'projects_title'.tr),
           SizedBox(
             width: 1110,
             child: Wrap(
@@ -28,35 +28,30 @@ class PortifolioProjects extends StatelessWidget {
                 runSpacing: 15,
                 children: [
                   MyProjectsCard(
-                      title: 'Ruined Kigdom',
-                      description:
-                          'Um jogo feito em flutter inspirado no gênero Soulslike',
-                      extendedDescription: 'Utilizado o package brasileiro Bonfire, baseado na documentação e com assets da comunidade',
+                      title: 'Ruined Kingdom',
+                      description: 'rk_description'.tr,
+                      extendedDescription: 'rk_extended_description'.tr,
                       onPressed: () => instance
                           .launchInWeb('${instance.toGithub}ruined_kingdom'),
                       imageSrc: 'assets/images/ruinedKingdom.png'),
                   MyProjectsCard(
                       title: 'Só Saladas',
-                      description:
-                          'Aplicativo para delivery de saladas com interface intuitiva',
-                      extendedDescription: 'Utilizado padrão de projeto MVC, BloC, shared Preferences, Integração com Json rest server, provider, singletons e diversos packages auxiliares',
+                      description: 'saladas_description'.tr,
+                      extendedDescription: 'saladas_extended_description'.tr,
                       onPressed: () => instance
                           .launchInWeb('${instance.toGithub}so_saladas'),
                       imageSrc: 'assets/images/soSaladas.png'),
                   MyProjectsCard(
                       title: 'Exclusive Diary',
-                      description:
-                          'Faça anotações sobre seu dia de forma fácil',
-                      extendedDescription: 'Utilizado conceitos de clean code, integração com firebase para login e criação de conta, gerência de estado com GetX e Cloud Firestore para armazenamento de dados',
+                      description: 'diary_description'.tr,
+                      extendedDescription: 'diary_extended_description'.tr,
                       onPressed: () => instance
                           .launchInWeb('${instance.toGithub}exclusive_diary'),
                       imageSrc: 'assets/images/exclusiveDiary.png'),
                   MyProjectsCard(
                       title: 'Vakinha Burguer',
-                      description:
-                          'Aplicativo para delivery de lanches com pix integrado',
-                      extendedDescription:
-                          'Utilizado padrão MVVM, gerência de estado com GetX e implementação de pix da GerenciaNet!',
+                      description: 'vakinha_description'.tr,
+                      extendedDescription: 'vakinha_extended_description'.tr,
                       onPressed: () => instance
                           .launchInWeb('${instance.toGithub}vakinha_burguer'),
                       imageSrc: 'assets/images/vakinhaBurger.png'),

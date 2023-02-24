@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
@@ -44,7 +45,7 @@ class GlassComponent extends StatelessWidget {
                     letterSpacing: -.5),
               ),
               Text(
-                'Desenvolvedor mobile Flutter',
+                'position'.tr,
                 style: context.textStyles.textRegular.copyWith(
                     fontSize: 45,
                     color: context.colors.light,

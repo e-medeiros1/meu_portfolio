@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/widgets/my_outlined_button.dart';
@@ -33,7 +34,7 @@ class PortifolioFooter extends StatelessWidget {
                           size: context.percentHeight(.04),
                           color: context.colors.light,
                         ),
-                        text: 'Voltar para o topo'),
+                        text: 'bottom_button'.tr),
                     const Spacer(),
                     const SocialMediaRow(),
                   ],

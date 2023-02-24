@@ -27,7 +27,7 @@ class PortifolioAbout extends StatelessWidget {
               onPressed: () => Get.toNamed('/pdf'),
               image: Image.asset('assets/images/download.png',
                   height: context.percentHeight(.035)),
-              text: 'Ver currículo',
+              text: 'viewer_button'.tr,
             ),
           ),
         ],
