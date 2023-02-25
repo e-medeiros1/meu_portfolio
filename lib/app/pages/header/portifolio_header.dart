@@ -8,26 +8,24 @@ class PortifolioHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (_, constraints) => Container(
-        alignment: Alignment.center,
-        constraints: const BoxConstraints(maxHeight: 900, minHeight: 700),
-        width: context.screenWidth,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            opacity: .3,
-            image: AssetImage('assets/images/background.jpg'),
-            fit: BoxFit.cover,
-          ),
+    return Container(
+      alignment: Alignment.center,
+      constraints: const BoxConstraints(maxHeight: 900, minHeight: 700),
+      width: context.screenWidth,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          opacity: .3,
+          image: AssetImage('assets/images/background.jpg'),
+          fit: BoxFit.cover,
         ),
-        child: Container(
-          margin: EdgeInsets.only(top: context.percentHeight(.05)),
-          width: 1110,
-          child: Stack(
-            children: const [
-              LogoAndBlurBox(),
-            ],
-          ),
+      ),
+      child: Container(
+        margin: EdgeInsets.only(top: context.percentHeight(.05)),
+        width: 1110,
+        child: Stack(
+          children: const [
+            LogoAndBlurBox(),
+          ],
         ),
       ),
     );

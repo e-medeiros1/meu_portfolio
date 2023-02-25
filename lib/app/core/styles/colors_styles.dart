@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 class ColorsStyles {
   static ColorsStyles? _instance;
+  final _darkTheme = const Color(0xFF191919);
+  final _lightTheme = const Color(0xFFD9D9D9);
 
   ColorsStyles._();
 
@@ -10,8 +12,8 @@ class ColorsStyles {
     return _instance!;
   }
 
-  Color get dark => const Color(0xFF191919);
-  Color get light => const Color(0xFFD9D9D9);
+  Color get dark => _darkTheme;
+  Color get light => _lightTheme;
 }
 
 extension ColorsStylesExtensions on BuildContext {
