@@ -15,8 +15,6 @@ class MyPortifolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-// final isLight = SchedulerBinding.instance.window.platformBrightness == Brightness.light;
-    
     return GetMaterialApp(
       title: 'Meu portifólio',
       debugShowCheckedModeBanner: false,
@@ -36,16 +34,19 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ScrollController scrollController = ScrollController();
+
     return Scaffold(
       backgroundColor: context.colors.dark,
       body: SingleChildScrollView(
+        controller: scrollController,
         child: Column(
-          children: const [
-            PortifolioHeader(),
-            PortifolioAbout(),
-            PortifolioStacks(),
-            PortifolioProjects(),
-            PortifolioFooter(),
+          children: [
+            const PortifolioHeader(),
+            const PortifolioAbout(),
+            const PortifolioStacks(),
+            const PortifolioProjects(),
+            PortifolioFooter(controller: scrollController),
           ],
         ),
       ),
