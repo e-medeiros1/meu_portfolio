@@ -39,6 +39,7 @@ dependencies:
   url_launcher: ^6.1.9
   get: ^4.6.5
   syncfusion_flutter_pdfviewer: ^20.4.50
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:

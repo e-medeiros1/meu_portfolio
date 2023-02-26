@@ -20,10 +20,8 @@ class MyPortifolio extends StatelessWidget {
     return GetMaterialApp(
       title: 'Meu portifólio',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
       translations: AppTranslations(),
       locale: const Locale('pt', 'BR'),
-      darkTheme: ThemeData.dark(),
       initialRoute: '/',
       routes: {
         '/': (context) => const LandingPage(),

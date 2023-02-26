@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
@@ -24,7 +25,7 @@ class GlassComponent extends StatelessWidget {
             image: const DecorationImage(
                 alignment: Alignment.bottomRight,
                 image: AssetImage('assets/images/profile.png'),
-                opacity: .9),
+                opacity: .85),
             color: context.colors.light.withOpacity(0.05),
           ),
           padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.05)),
@@ -44,12 +45,61 @@ class GlassComponent extends StatelessWidget {
                     color: context.colors.light,
                     letterSpacing: -.5),
               ),
-              Text(
-                'position'.tr,
-                style: context.textStyles.textRegular.copyWith(
-                    fontSize: 45,
-                    color: context.colors.light,
-                    letterSpacing: -.5),
+              Wrap(
+                alignment: WrapAlignment.center,
+                children: [
+                  Text(
+                    'pre_position'.tr,
+                    softWrap: true,
+                    style: context.textStyles.textRegular.copyWith(
+                      overflow: TextOverflow.ellipsis,
+                      fontSize: 53,
+                      color: context.colors.light,
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  AnimatedTextKit(
+                    repeatForever: true,
+                    animatedTexts: [
+                      TyperAnimatedText(
+                        'position'.tr,
+                        textStyle: context.textStyles.textRegular.copyWith(
+                          fontSize: 53,
+                          fontWeight: FontWeight.bold,
+                          overflow: TextOverflow.ellipsis,
+                          color: context.colors.light,
+                        ),
+                      ),
+                      TyperAnimatedText(
+                        'position1'.tr,
+                        textStyle: context.textStyles.textRegular.copyWith(
+                          fontSize: 53,
+                          fontWeight: FontWeight.bold,
+                          overflow: TextOverflow.ellipsis,
+                          color: context.colors.light,
+                        ),
+                      ),
+                      TyperAnimatedText(
+                        'position2'.tr,
+                        textStyle: context.textStyles.textRegular.copyWith(
+                          fontSize: 53,
+                          fontWeight: FontWeight.bold,
+                          overflow: TextOverflow.ellipsis,
+                          color: context.colors.light,
+                        ),
+                      ),
+                      TyperAnimatedText(
+                        'position3'.tr,
+                        textStyle: context.textStyles.textRegular.copyWith(
+                          fontSize: 53,
+                          fontWeight: FontWeight.bold,
+                          overflow: TextOverflow.ellipsis,
+                          color: context.colors.light,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
               const SizedBox(height: 10),
               const SocialMediaRow(),

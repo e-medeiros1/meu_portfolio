@@ -4,7 +4,11 @@ class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'pt_BR': {
-          'position': 'Desenvolvedor mobile Flutter',
+          'pre_position': 'Eu crio coisas com',
+          'position': 'criatividade',
+          'position1': 'foco',
+          'position2': 'determinação',
+          'position3': 'Flutter',
           'about_title': 'Sobre mim',
           'about1':
               'Encantando por tecnologia desde pequeno, logo me vi interessado em trabalhar com montagem e manutenção de computadores, com o tempo, ao ingressar na faculdade de Ciência da computação, conheci a programação e após um período de estágio como suporte técnico, decidi migrar em definitivo para o desenvolvimento de software.',
@@ -30,7 +34,11 @@ class AppTranslations extends Translations {
           'bottom_button': 'Voltar para o topo',
         },
         'en_US': {
-          'position': 'Flutter mobile developer',
+          'pre_position': 'I create things with',
+          'position': 'creativity',
+          'position1': 'focus',
+          'position2': 'determination',
+          'position3': 'Flutter',
           'about_title': 'About me',
           'about1':
               'Enchanted by technology since I was a child, I soon found myself interested in working with computer assembly and maintenance. As time went by, when I entered a computer science college, I got acquainted with programming and after a period of internship as a technical support, I decided to migrate definitively to software development.',
