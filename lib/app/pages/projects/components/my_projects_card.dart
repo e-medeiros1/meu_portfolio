@@ -66,52 +66,47 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                 width: 220,
                 fit: BoxFit.cover,
               ),
-              !isHover
-                  ? Expanded(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: context.percentWidth(.025),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text(
-                              widget.title.toUpperCase(),
-                              style: context.textStyles.textSemiBold.copyWith(
-                                  fontSize: 20,
-                                  color: context.colors.light,
-                                  height: 1.5),
-                            ),
-                            const SizedBox(height: 30),
-                            Text(
-                              widget.description,
-                              textAlign: TextAlign.center,
-                              style: context.textStyles.textRegular.copyWith(
-                                  fontSize: 18, color: context.colors.light),
-                            ),
-                            const SizedBox(height: 30),
-                            MyOutlinedButton(
-                                onPressed: widget.onPressed,
-                                image: Image.asset('assets/images/github2.png',
-                                    height: context.percentHeight(.035)),
-                                text: 'Ver repositório'),
-                          ],
-                        ),
-                      ),
-                    )
-                  : Expanded(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: context.percentWidth(.025)),
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: context.percentWidth(.025),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10),
                         child: Text(
-                          widget.extendedDescription,
-                          textAlign: TextAlign.center,
-                          style: context.textStyles.textRegular.copyWith(
-                              fontSize: 18, color: context.colors.light),
+                          widget.title.toUpperCase(),
+                          style: context.textStyles.textSemiBold.copyWith(
+                              fontSize: 20,
+                              color: context.colors.light,
+                              height: 1.5),
                         ),
                       ),
-                    ),
+                      const Spacer(),
+                      Text(
+                        !isHover
+                            ? widget.description
+                            : widget.extendedDescription,
+                        textAlign: TextAlign.center,
+                        style: context.textStyles.textRegular.copyWith(
+                            fontSize: 18, color: context.colors.light),
+                      ),
+                      const Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        child: MyOutlinedButton(
+                            onPressed: widget.onPressed,
+                            image: Image.asset('assets/images/github2.png',
+                                height: context.percentHeight(.035)),
+                            text: 'Ver repositório'),
+                      ),
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),
