@@ -52,7 +52,6 @@ class GlassComponent extends StatelessWidget {
                     'pre_position'.tr,
                     softWrap: true,
                     style: context.textStyles.textRegular.copyWith(
-                      overflow: TextOverflow.ellipsis,
                       fontSize: 53,
                       color: context.colors.light,
                     ),
