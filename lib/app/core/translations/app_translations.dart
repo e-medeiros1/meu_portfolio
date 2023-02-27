@@ -4,7 +4,7 @@ class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'pt_BR': {
-          'pre_position': 'Eu crio coisas com',
+          'pre_position': 'Crio coisas com',
           'position': 'criatividade',
           'position1': 'foco',
           'position2': 'determinação',

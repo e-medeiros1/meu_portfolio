@@ -33,10 +33,10 @@ class _LogoAndBlurBoxState extends State<LogoAndBlurBox> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
-                  'assets/images/personlogo.png',
+                  'assets/images/myLogo.png',
                   color: context.colors.light,
                   fit: BoxFit.cover,
-                  height: context.percentHeight(.17),
+                  height: context.percentHeight(.1),
                 ),
                 MyDropdownMenu(
                     listLanguage: listLanguage,

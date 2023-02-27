@@ -52,7 +52,7 @@ class GlassComponent extends StatelessWidget {
                     'pre_position'.tr,
                     softWrap: true,
                     style: context.textStyles.textRegular.copyWith(
-                      fontSize: 53,
+                      fontSize: 50,
                       color: context.colors.light,
                     ),
                   ),
@@ -63,7 +63,7 @@ class GlassComponent extends StatelessWidget {
                       TyperAnimatedText(
                         'position'.tr,
                         textStyle: context.textStyles.textRegular.copyWith(
-                          fontSize: 53,
+                          fontSize: 50,
                           fontWeight: FontWeight.bold,
                           overflow: TextOverflow.ellipsis,
                           color: context.colors.light,
@@ -72,7 +72,7 @@ class GlassComponent extends StatelessWidget {
                       TyperAnimatedText(
                         'position1'.tr,
                         textStyle: context.textStyles.textRegular.copyWith(
-                          fontSize: 53,
+                          fontSize: 50,
                           fontWeight: FontWeight.bold,
                           overflow: TextOverflow.ellipsis,
                           color: context.colors.light,
@@ -81,7 +81,7 @@ class GlassComponent extends StatelessWidget {
                       TyperAnimatedText(
                         'position2'.tr,
                         textStyle: context.textStyles.textRegular.copyWith(
-                          fontSize: 53,
+                          fontSize: 50,
                           fontWeight: FontWeight.bold,
                           overflow: TextOverflow.ellipsis,
                           color: context.colors.light,
@@ -90,7 +90,7 @@ class GlassComponent extends StatelessWidget {
                       TyperAnimatedText(
                         'position3'.tr,
                         textStyle: context.textStyles.textRegular.copyWith(
-                          fontSize: 53,
+                          fontSize: 50,
                           fontWeight: FontWeight.bold,
                           overflow: TextOverflow.ellipsis,
                           color: context.colors.light,
