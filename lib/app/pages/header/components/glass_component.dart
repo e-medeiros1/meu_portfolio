@@ -48,8 +48,8 @@ class GlassComponent extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(
                     left: 3,
-                    top: context.percentHeight(.1),
-                    bottom: context.percentHeight(.05)),
+                    top: context.percentHeight(.12),
+                    bottom: context.percentHeight(.04)),
                 child: const SocialMediaRow(),
               ),
             ],
