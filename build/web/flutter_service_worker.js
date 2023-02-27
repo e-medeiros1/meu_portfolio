@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "4cbfc325d0bba0982bd0fce0ee17fe1b",
+  "assets/AssetManifest.json": "15e12273a945e5e0d0f6e483548f028f",
 "assets/assets/cv/my_cv.pdf": "45a02160ab8a5589758fdf3d302eb08f",
 "assets/assets/fonts/Poppins/Poppins-Regular.ttf": "093ee89be9ede30383f39a899c485a82",
 "assets/assets/images/background.jpg": "afafcafca42c78f980a54bcc1e5106ed",
@@ -16,8 +16,7 @@ const RESOURCES = {
 "assets/assets/images/git.png": "fefb43d2f2583b01c576b8104545caff",
 "assets/assets/images/github2.png": "aade7d7f7df6d326ce3539aed8626159",
 "assets/assets/images/hover.png": "f0a2318c40269d84384f56f54d25ad69",
-"assets/assets/images/myLogo.png": "324e8dfb3c3ce39d60110665f2101f7a",
-"assets/assets/images/personLogo.png": "4f84595dcd2b617f361e2c4d5b5d832e",
+"assets/assets/images/myLogo.png": "bbd6e86ae274f2b3a928172637991f37",
 "assets/assets/images/profile.png": "df1405a64a4abe15046f796bd647b914",
 "assets/assets/images/ruinedKingdom.png": "a40443adac7c5e714f06c7a85a2b5563",
 "assets/assets/images/soSaladas.png": "7ff2c57fa3f228104b6fc849a21e2a99",
@@ -42,9 +41,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "89be925e8b78241a832577737ba57d42",
-"/": "89be925e8b78241a832577737ba57d42",
-"main.dart.js": "fc9f8748e48789af7be86bcbe0bc3c29",
+"index.html": "4f160e36c88b4414a4cfd483114a62a1",
+"/": "4f160e36c88b4414a4cfd483114a62a1",
+"main.dart.js": "f0cc4020fc1f5e82f8025b4f6a9c4980",
 "manifest.json": "b4dff8c3621d18850c54b7863ad86d8f",
 "version.json": "92213db5019852580e0251f14c13ba29"
 };

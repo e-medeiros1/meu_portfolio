@@ -36,18 +36,20 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final ScrollController scrollController = ScrollController();
 
-    return Scaffold(
-      backgroundColor: context.colors.dark,
-      body: SingleChildScrollView(
-        controller: scrollController,
-        child: Column(
-          children: [
-            const PortifolioHeader(),
-            const PortifolioAbout(),
-            const PortifolioStacks(),
-            const PortifolioProjects(),
-            PortifolioFooter(controller: scrollController),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: context.colors.dark,
+        body: SingleChildScrollView(
+          controller: scrollController,
+          child: Column(
+            children: [
+              const PortifolioHeader(),
+              const PortifolioAbout(),
+              const PortifolioStacks(),
+              const PortifolioProjects(),
+              PortifolioFooter(controller: scrollController),
+            ],
+          ),
         ),
       ),
     );

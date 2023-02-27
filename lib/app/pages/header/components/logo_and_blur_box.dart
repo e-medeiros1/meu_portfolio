@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:my_portifolio/app/core/helper/size_extensios.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 
@@ -16,13 +15,8 @@ class LogoAndBlurBox extends StatefulWidget {
 }
 
 class _LogoAndBlurBoxState extends State<LogoAndBlurBox> {
-  final selectedValue = 'PT'.obs;
   @override
   Widget build(BuildContext context) {
-    final listLanguage = ['PT', 'EN'];
-    final isPortuguese = false.obs;
-    final isEnglish = false.obs;
-
     return LayoutBuilder(
       builder: (_, constraints) => Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -36,13 +30,12 @@ class _LogoAndBlurBoxState extends State<LogoAndBlurBox> {
                   'assets/images/myLogo.png',
                   color: context.colors.light,
                   fit: BoxFit.cover,
-                  height: context.percentHeight(.1),
+                  height: context.percentHeight(.11),
                 ),
-                MyDropdownMenu(
-                    listLanguage: listLanguage,
-                    selectedValue: selectedValue,
-                    isPortuguese: isPortuguese,
-                    isEnglish: isEnglish)
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 5),
+                  child: MyDropdownMenu(),
+                )
               ],
             ),
           ),
