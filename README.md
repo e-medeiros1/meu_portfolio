@@ -1,16 +1,46 @@
-# my_portifolio
+# <p align="center">
 
-A new Flutter project.
+<p align="center">
+      <img src="https://user-images.githubusercontent.com/73318684/221654174-1a53e468-1990-49ac-866d-15fe9ada500c.png" width="150" alt="Logo portifolio"/>
+<h2 align="center"> Meu portifólio </br></br> 
 
-## Getting Started
+<img src="https://img.shields.io/badge/dart-C.svg?style=for-the-badge&logo=dart&color=152030">
+<img src="https://img.shields.io/badge/flutter-C.svg?style=for-the-badge&logo=flutter&color=0468D7"> 
+<img src="https://img.shields.io/badge/Visual%20Studio%20Code-%23323330.svg?style=for-the-badge&logo=visual-studio-code&logoColor=FFFFFF&color=2F74C0">   </h2>
 
-This project is a starting point for a Flutter application.
+<h2> Sobre </h2>
 
-A few resources to get you started if this is your first Flutter project:
+- Layout responsivo para mostrar um pouco sobre o conhecimento e projetos que venho acumulado durante esse tempo de estudo
+<p >
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### Funcionalidades
+
+  - [x] Responsividade
+  - [x] Seletor de linguagem
+  - [x] Sobre
+  - [x] Stacks
+  - [x] Projetos  
+  - [x] Contatos
+  
+</p>    
+<p align="center">
+<img  src="https://user-images.githubusercontent.com/73318684/221653472-7abb6a75-24b9-47f6-aa6c-614b5aa96ae2.png" width="950" alt="Logo portifolio"/>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+   
+   >Esse projeto foi desenvolvido ❤️ por **[@erimedeiros](https://www.linkedin.com/in/erimedeiros/)**,<br> 
+
+   ---
+  
