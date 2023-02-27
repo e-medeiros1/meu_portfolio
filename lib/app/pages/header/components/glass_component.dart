@@ -44,6 +44,7 @@ class GlassComponent extends StatelessWidget {
                       color: context.colors.light,
                       letterSpacing: -.5)),
               const PositionTextAnimation(),
+              const Spacer(),
               const SocialMediaRow(),
               const Spacer(),
             ],
