@@ -45,8 +45,11 @@ class GlassComponent extends StatelessWidget {
                       letterSpacing: -.5)),
               const PositionTextAnimation(),
               const Spacer(),
-              const SocialMediaRow(),
-              const Spacer(),
+              Padding(
+                padding:
+                    EdgeInsets.only(left: 3, bottom: context.percentHeight(.1)),
+                child: const SocialMediaRow(),
+              ),
             ],
           ),
         ),

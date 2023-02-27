@@ -30,7 +30,7 @@ class PortifolioFooter extends StatelessWidget {
             SizedBox(
                 width: 1110,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     MyOutlinedButton(
                         onPressed: () {

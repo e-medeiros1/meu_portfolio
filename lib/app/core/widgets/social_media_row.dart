@@ -10,27 +10,22 @@ class SocialMediaRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final CardController instance = Get.put(CardController());
-    return Expanded(
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            SocialMediaButton(
-                onPressed: () => instance.launchInWeb(instance.toGithub),
-                icon: FontAwesomeIcons.github),
-            SocialMediaButton(
-                onPressed: () => instance.launchInWeb(instance.toLinkedin),
-                icon: FontAwesomeIcons.linkedin),
-            SocialMediaButton(
-                onPressed: () => instance.launchInMail(instance.toEmail),
-                icon: FontAwesomeIcons.googlePlus),
-            SocialMediaButton(
-                onPressed: () => instance.launchWhatsapp(instance.toWhatsapp),
-                icon: FontAwesomeIcons.whatsapp),
-          ],
-        ),
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        SocialMediaButton(
+            onPressed: () => instance.launchInWeb(instance.toGithub),
+            icon: FontAwesomeIcons.github),
+        SocialMediaButton(
+            onPressed: () => instance.launchInWeb(instance.toLinkedin),
+            icon: FontAwesomeIcons.linkedin),
+        SocialMediaButton(
+            onPressed: () => instance.launchInMail(instance.toEmail),
+            icon: FontAwesomeIcons.googlePlus),
+        SocialMediaButton(
+            onPressed: () => instance.launchWhatsapp(instance.toWhatsapp),
+            icon: FontAwesomeIcons.whatsapp),
+      ],
     );
   }
 }
