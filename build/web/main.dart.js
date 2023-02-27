@@ -83260,7 +83260,7 @@ $.C.ax$.push(new A.abx(s))
 r=$.yT()
 r.a=s.dy
 s=t.N
-s=A.a8(["pt_BR",A.a8(["pre_position","Eu crio coisas com","position","criatividade","position1","foco","position2","determina\xe7\xe3o","position3","Flutter","about_title","Sobre mim","about1","Encantando por tecnologia desde pequeno, logo me vi interessado em trabalhar com montagem e manuten\xe7\xe3o de computadores, com o tempo, ao ingressar na faculdade de Ci\xeancia da computa\xe7\xe3o, conheci a programa\xe7\xe3o e ap\xf3s um per\xedodo de est\xe1gio como suporte t\xe9cnico, decidi migrar em definitivo para o desenvolvimento de software.","about2","Nos \xfaltimos meses passei a estudar majoritariamente Dart e Flutter para cria\xe7\xe3o de aplicativos h\xedbridos, faz parte do meu escopo e j\xe1 utilizei em projetos pessoais:\nL\xf3gica de programa\xe7\xe3o, conceitos de POO, integra\xe7\xe3o com servi\xe7os Firebase, consumo de api's diversas, Future, Streams, conceitos b\xe1sicos de clean code e atualmente estudo GetX.","viewer_button","Ver curr\xedculo","projects_title","Projetos","rk_description","Um jogo feito em flutter inspirado no g\xeanero Soulslike",p,"Utilizado o package brasileiro Bonfire, baseado na documenta\xe7\xe3o e com assets da comunidade",o,"Aplicativo para delivery de saladas com interface intuitiva",n,"Utilizado padr\xe3o de projeto MVC, BloC, shared Preferences, Integra\xe7\xe3o com Json rest server, provider, singletons e diversos packages auxiliares",m,"Fa\xe7a anota\xe7\xf5es sobre seu dia de forma f\xe1cil",l,"Utilizado conceitos de clean code, integra\xe7\xe3o com firebase para login e cria\xe7\xe3o de conta, ger\xeancia de estado com GetX e Cloud Firestore para armazenamento de dados",k,"Aplicativo para delivery de lanches com pix integrado",j,"Utilizado padr\xe3o MVVM, ger\xeancia de estado com GetX e implementa\xe7\xe3o de pix da GerenciaNet!","bottom_button","Voltar para o topo"],s,s),"en_US",A.a8(["pre_position","I create things with","position","creativity","position1","focus","position2","determination","position3","Flutter","about_title","About me","about1","Enchanted by technology since I was a child, I soon found myself interested in working with computer assembly and maintenance. As time went by, when I entered a computer science college, I got acquainted with programming and after a period of internship as a technical support, I decided to migrate definitively to software development.","about2","In the last few months, I started mainly studying Dart and Flutter for creating hybrid applications, it's part of my scope and I have already used them in personal projects: Programming logic, OOP concepts, integration with Firebase services, consumption of various API's, Future, Streams, basic concepts of clean code and currently I'm studying GetX.","viewer_button","See resume","projects_title","Projects","rk_description","A game made with Flutter inspired by the Soulslike genre",p,"Used the Brazilian package called Bonfire, based on the documentation and with community assets",o,"Delivery app to order salads with intuitive interface",n,"Used project pattern MVC, BloC, shared Preferences, Integration with Json rest server, provider, singletons and several auxiliary packages",m,"Easily take notes about your day",l,"Used clean code concepts, firebase integration for login and account creation, state management with GetX and Cloud Firestore for data storage",k,"Delivery app to order snacks and burguers with integrated pix",j,"Used pattern MVVM, state management with GetX and pix implementation by GerenciaNet","bottom_button","Back to top"],s,s)],s,t.GU)
+s=A.a8(["pt_BR",A.a8(["pre_position","Crio coisas com","position","criatividade","position1","foco","position2","determina\xe7\xe3o","position3","Flutter","about_title","Sobre mim","about1","Encantando por tecnologia desde pequeno, logo me vi interessado em trabalhar com montagem e manuten\xe7\xe3o de computadores, com o tempo, ao ingressar na faculdade de Ci\xeancia da computa\xe7\xe3o, conheci a programa\xe7\xe3o e ap\xf3s um per\xedodo de est\xe1gio como suporte t\xe9cnico, decidi migrar em definitivo para o desenvolvimento de software.","about2","Nos \xfaltimos meses passei a estudar majoritariamente Dart e Flutter para cria\xe7\xe3o de aplicativos h\xedbridos, faz parte do meu escopo e j\xe1 utilizei em projetos pessoais:\nL\xf3gica de programa\xe7\xe3o, conceitos de POO, integra\xe7\xe3o com servi\xe7os Firebase, consumo de api's diversas, Future, Streams, conceitos b\xe1sicos de clean code e atualmente estudo GetX.","viewer_button","Ver curr\xedculo","projects_title","Projetos","rk_description","Um jogo feito em flutter inspirado no g\xeanero Soulslike",p,"Utilizado o package brasileiro Bonfire, baseado na documenta\xe7\xe3o e com assets da comunidade",o,"Aplicativo para delivery de saladas com interface intuitiva",n,"Utilizado padr\xe3o de projeto MVC, BloC, shared Preferences, Integra\xe7\xe3o com Json rest server, provider, singletons e diversos packages auxiliares",m,"Fa\xe7a anota\xe7\xf5es sobre seu dia de forma f\xe1cil",l,"Utilizado conceitos de clean code, integra\xe7\xe3o com firebase para login e cria\xe7\xe3o de conta, ger\xeancia de estado com GetX e Cloud Firestore para armazenamento de dados",k,"Aplicativo para delivery de lanches com pix integrado",j,"Utilizado padr\xe3o MVVM, ger\xeancia de estado com GetX e implementa\xe7\xe3o de pix da GerenciaNet!","bottom_button","Voltar para o topo"],s,s),"en_US",A.a8(["pre_position","I create things with","position","creativity","position1","focus","position2","determination","position3","Flutter","about_title","About me","about1","Enchanted by technology since I was a child, I soon found myself interested in working with computer assembly and maintenance. As time went by, when I entered a computer science college, I got acquainted with programming and after a period of internship as a technical support, I decided to migrate definitively to software development.","about2","In the last few months, I started mainly studying Dart and Flutter for creating hybrid applications, it's part of my scope and I have already used them in personal projects: Programming logic, OOP concepts, integration with Firebase services, consumption of various API's, Future, Streams, basic concepts of clean code and currently I'm studying GetX.","viewer_button","See resume","projects_title","Projects","rk_description","A game made with Flutter inspired by the Soulslike genre",p,"Used the Brazilian package called Bonfire, based on the documentation and with community assets",o,"Delivery app to order salads with intuitive interface",n,"Used project pattern MVC, BloC, shared Preferences, Integration with Json rest server, provider, singletons and several auxiliary packages",m,"Easily take notes about your day",l,"Used clean code concepts, firebase integration for login and account creation, state management with GetX and Cloud Firestore for data storage",k,"Delivery app to order snacks and burguers with integrated pix",j,"Used pattern MVVM, state management with GetX and pix implementation by GerenciaNet","bottom_button","Back to top"],s,s)],s,t.GU)
 r.c.O(0,s)
 s=$.KP()
 s.x2=null
@@ -83924,24 +83924,24 @@ o=A.c9("Eril\xe2ndio \nSantos",h,h,h,h,B.fq.atS(B.ai,80,-0.5),h,h)
 n=A.fi("pre_position")
 if($.d8==null)$.d8=new A.fw()
 if($.bm==null)$.bm=new A.cM()
-n=A.c9(n,h,h,h,!0,B.db.mB(B.ai,53),h,h)
+n=A.c9(n,h,h,h,!0,B.db.mB(B.ai,50),h,h)
 m=A.fi("position")
 if($.d8==null)$.d8=new A.fw()
 if($.bm==null)$.bm=new A.cM()
-m=A.aqp(m,B.db.BV(B.ai,53,B.c1,B.aM))
+m=A.aqp(m,B.db.BV(B.ai,50,B.c1,B.aM))
 l=A.fi("position1")
 if($.d8==null)$.d8=new A.fw()
 if($.bm==null)$.bm=new A.cM()
-l=A.aqp(l,B.db.BV(B.ai,53,B.c1,B.aM))
+l=A.aqp(l,B.db.BV(B.ai,50,B.c1,B.aM))
 k=A.fi("position2")
 if($.d8==null)$.d8=new A.fw()
 if($.bm==null)$.bm=new A.cM()
-k=A.aqp(k,B.db.BV(B.ai,53,B.c1,B.aM))
+k=A.aqp(k,B.db.BV(B.ai,50,B.c1,B.aM))
 j=A.fi("position3")
 if($.d8==null)$.d8=new A.fw()
 if($.bm==null)$.bm=new A.cM()
 i=t.p
-return A.aGm(g,A.aQ1(A.cd(h,A.eT(A.b([o,A.aDr(B.Xj,A.b([n,B.or,new A.zb(A.b([m,l,k,A.aqp(j,B.db.BV(B.ai,53,B.c1,B.aM))],t.u6),!0,h)],i),0,0),B.R7,B.Bk],i),B.dr,h,B.bO,B.R),B.l,h,new A.aw(0,1110,0,p.a.b*0.7),new A.d9(s,B.G2,h,h,h,h,B.ac),h,h,h,new A.az(q,0,q,0),h,h,r.a.a),f),B.cm)}}
+return A.aGm(g,A.aQ1(A.cd(h,A.eT(A.b([o,A.aDr(B.Xj,A.b([n,B.or,new A.zb(A.b([m,l,k,A.aqp(j,B.db.BV(B.ai,50,B.c1,B.aM))],t.u6),!0,h)],i),0,0),B.R7,B.Bk],i),B.dr,h,B.bO,B.R),B.l,h,new A.aw(0,1110,0,p.a.b*0.7),new A.d9(s,B.G2,h,h,h,h,B.ac),h,h,h,new A.az(q,0,q,0),h,h,r.a.a),f),B.cm)}}
 A.BZ.prototype={
 ap(){var s=new A.SW($,!0,!1,new A.hB(A.b([],t.pM),t.Di),A.p(t.HE,t.d_))
 s.mO$="PT"
@@ -83952,7 +83952,7 @@ A.av0.prototype={
 $2(a,b){var s,r=this,q=null
 if($.bm==null)$.bm=new A.cM()
 s=t.p
-return A.eT(A.b([new A.c7(B.GI,A.jd(A.b([A.OU("assets/images/personlogo.png",B.ai,B.fH,r.b.Z(t.w).f.a.b*0.17,q),new A.PO(r.c,r.a.d,r.d,r.e,q)],s),B.Z,q,B.dB,B.R),q),B.ip,B.Hh,B.Rd],s),B.Z,q,B.aj,B.R)},
+return A.eT(A.b([new A.c7(B.GI,A.jd(A.b([A.OU("assets/images/myLogo.png",B.ai,B.fH,r.b.Z(t.w).f.a.b*0.1,q),new A.PO(r.c,r.a.d,r.d,r.e,q)],s),B.Z,q,B.dB,B.R),q),B.ip,B.Hh,B.Rd],s),B.Z,q,B.aj,B.R)},
 $S:448}
 A.PO.prototype={
 T(a){var s=null,r=A.lY(12)
