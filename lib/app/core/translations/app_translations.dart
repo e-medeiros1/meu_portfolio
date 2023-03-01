@@ -32,6 +32,7 @@ class AppTranslations extends Translations {
           'vakinha_extended_description':
               'Utilizado padrão MVVM, gerência de estado com GetX e implementação de pix da GerenciaNet!',
           'bottom_button': 'Voltar para o topo',
+          'repository_button': "Ver no repositório",
         },
         'en_US': {
           'pre_position': 'I create things with',
@@ -62,6 +63,7 @@ class AppTranslations extends Translations {
           'vakinha_extended_description':
               'Used pattern MVVM, state management with GetX and pix implementation by GerenciaNet',
           'bottom_button': 'Back to top',
+          'repository_button': "Go to repository",
         }
       };
 }
