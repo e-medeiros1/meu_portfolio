@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:my_portifolio/app/core/styles/colors_styles.dart';
 import 'package:my_portifolio/app/core/styles/text_styles.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
@@ -20,7 +21,7 @@ class _CvViewerState extends State<CvViewer> {
           centerTitle: true,
           elevation: 0,
           title: Text(
-            'Meu currículo',
+            'cv'.tr,
             style: context.textStyles.textExtraBold
                 .copyWith(color: context.colors.light),
           ),

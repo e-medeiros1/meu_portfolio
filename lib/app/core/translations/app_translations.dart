@@ -4,6 +4,7 @@ class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'pt_BR': {
+          'office': 'Desenvolvedor mobile',
           'pre_position': 'Eu crio coisas com',
           'position': 'criatividade',
           'position1': 'foco',
@@ -15,6 +16,7 @@ class AppTranslations extends Translations {
           'about2':
               'Nos últimos meses passei a estudar majoritariamente Dart e Flutter para criação de aplicativos híbridos, faz parte do meu escopo e já utilizei em projetos pessoais:\nLógica de programação, conceitos de POO, integração com serviços Firebase, consumo de api\'s diversas, Future, Streams, conceitos básicos de clean code e atualmente estudo GetX.',
           'viewer_button': 'Ver currículo',
+          'cv': 'Meu currículo',
           'projects_title': 'Projetos',
           'rk_description':
               'Um jogo feito em flutter inspirado no gênero Soulslike',
@@ -35,6 +37,7 @@ class AppTranslations extends Translations {
           'repository_button': "Ver no repositório",
         },
         'en_US': {
+          'office': 'Mobile developer',
           'pre_position': 'I create things with',
           'position': 'creativity',
           'position1': 'focus',
@@ -46,6 +49,7 @@ class AppTranslations extends Translations {
           'about2':
               'In the last few months, I started mainly studying Dart and Flutter for creating hybrid applications, it\'s part of my scope and I have already used them in personal projects: Programming logic, OOP concepts, integration with Firebase services, consumption of various API\'s, Future, Streams, basic concepts of clean code and currently I\'m studying GetX.',
           'viewer_button': 'See resume',
+          'cv': 'My resume',
           'projects_title': 'Projects',
           'rk_description':
               'A game made with Flutter inspired by the Soulslike genre',
