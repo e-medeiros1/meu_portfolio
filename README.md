@@ -26,11 +26,8 @@
   
 </p>    
 <p align="center">
-<img  src="https://user-images.githubusercontent.com/73318684/221653472-7abb6a75-24b9-47f6-aa6c-614b5aa96ae2.png" width="950" alt="Logo portifolio"/>
+<img  src="https://user-images.githubusercontent.com/73318684/226068015-4d538b8c-520c-49fd-a0bb-83f26415590f.png" width="950" alt="Logo portifolio"/>
 </p>
-
-
-
 
 
 
