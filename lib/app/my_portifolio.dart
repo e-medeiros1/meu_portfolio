@@ -40,6 +40,7 @@ class LandingPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: context.colors.dark,
         body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
           controller: scrollController,
           child: Column(
             children: [

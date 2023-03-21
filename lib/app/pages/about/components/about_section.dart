@@ -11,21 +11,21 @@ class AboutSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.012)),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          AboutMeText(
-            text:
-                'about1'.tr,
-          ),
-           AboutMeText(
-            text:
-                'about2'.tr,
-          ),
-          SizedBox(height: context.percentHeight(.05)),
-        ],
+    return SelectionArea(
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.012)),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            AboutMeText(
+              text: 'about1'.tr,
+            ),
+            AboutMeText(
+              text: 'about2'.tr,
+            ),
+            SizedBox(height: context.percentHeight(.05)),
+          ],
+        ),
       ),
     );
   }
