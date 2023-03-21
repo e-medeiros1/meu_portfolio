@@ -16,14 +16,18 @@ class AboutSection extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          AboutMeText(
-            text:
-                'about1'.tr,
+          SelectionArea(
+            child: AboutMeText(
+              text:
+                  'about1'.tr,
+            ),
           ),
-           AboutMeText(
-            text:
-                'about2'.tr,
-          ),
+           SelectionArea(
+             child: AboutMeText(
+              text:
+                  'about2'.tr,
+                     ),
+           ),
           SizedBox(height: context.percentHeight(.05)),
         ],
       ),
