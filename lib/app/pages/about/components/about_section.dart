@@ -11,6 +11,7 @@ class AboutSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return SelectionArea(
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.012)),
