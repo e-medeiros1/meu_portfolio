@@ -15,6 +15,10 @@ class SocialMediaButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
+        focusColor: Colors.transparent,
+        hoverColor: context.colors.light.withOpacity(.01),
+        highlightColor: Colors.transparent,
+        splashColor: Colors.transparent,
         onPressed: onPressed,
         icon: FaIcon(icon),
         color: context.colors.light.withOpacity(.8),
