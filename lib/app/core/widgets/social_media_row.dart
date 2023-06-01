@@ -13,18 +13,30 @@ class SocialMediaRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        SocialMediaButton(
-            onPressed: () => instance.launchInWeb(instance.toGithub),
-            icon: FontAwesomeIcons.github),
-        SocialMediaButton(
-            onPressed: () => instance.launchInWeb(instance.toLinkedin),
-            icon: FontAwesomeIcons.linkedin),
-        SocialMediaButton(
-            onPressed: () => instance.launchInMail(instance.toEmail),
-            icon: FontAwesomeIcons.googlePlus),
-        SocialMediaButton(
-            onPressed: () => instance.launchWhatsapp(instance.toWhatsapp),
-            icon: FontAwesomeIcons.whatsapp),
+        Tooltip(
+          message: 'Github',
+          child: SocialMediaButton(
+              onPressed: () => instance.launchInWeb(instance.toGithub),
+              icon: FontAwesomeIcons.github),
+        ),
+        Tooltip(
+          message: 'Linkedin',
+          child: SocialMediaButton(
+              onPressed: () => instance.launchInWeb(instance.toLinkedin),
+              icon: FontAwesomeIcons.linkedin),
+        ),
+        Tooltip(
+          message: 'Email',
+          child: SocialMediaButton(
+              onPressed: () => instance.launchInMail(instance.toEmail),
+              icon: FontAwesomeIcons.googlePlus),
+        ),
+        Tooltip(
+          message: 'Whatsapp',
+          child: SocialMediaButton(
+              onPressed: () => instance.launchWhatsapp(instance.toWhatsapp),
+              icon: FontAwesomeIcons.whatsapp),
+        ),
       ],
     );
   }
