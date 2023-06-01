@@ -39,6 +39,10 @@ class AppTranslations extends Translations {
               'Sistema para gerenciamento de pedidos e produtos do Vakinha Burger',
           'backoffice_vakinha_extended_description':
               'Utilizado padrão MVC, gerência de estado com MobX, Modular para injeção e aplicando diversos conceitos de clean code',
+          'menu_about': 'Sobre mim',
+          'menu_stacks': 'Stacks',
+          'menu_projects': 'Projetos',
+          'menu_home': 'Início',
         },
         'en_US': {
           'office': 'Mobile developer',
@@ -67,7 +71,7 @@ class AppTranslations extends Translations {
           'diary_extended_description':
               'Used clean code concepts, firebase integration for login and account creation, state management with GetX and Cloud Firestore for data storage',
           'vakinha_description':
-              'Delivery app to order snacks and burguers with integrated pix',
+              'Delivery app to order snacks and burgers with integrated pix',
           'vakinha_extended_description':
               'Used pattern MVVM, state management with GetX and pix implementation by GerenciaNet',
           'bottom_button': 'Back to top',
@@ -76,6 +80,10 @@ class AppTranslations extends Translations {
               'Order and product management system made with Flutter web',
           'backoffice_vakinha_extended_description':
               'Used MVC pattern, state management with MobX, Modular for injection and applying several clean code concepts',
+          'menu_about': 'About me',
+          'menu_stacks': 'Stacks',
+          'menu_projects': 'Projects',
+          'menu_home': 'Home',
         }
       };
 }
