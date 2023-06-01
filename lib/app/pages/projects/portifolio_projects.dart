@@ -49,14 +49,14 @@ class PortifolioProjects extends StatelessWidget {
                         .launchInWeb('${instance.toGithub}exclusive_diary'),
                     imageSrc: 'assets/images/exclusiveDiary.png'),
                 MyProjectsCard(
-                    title: 'Vakinha Burguer',
+                    title: 'Vakinha Burger',
                     description: 'vakinha_description'.tr,
                     extendedDescription: 'vakinha_extended_description'.tr,
                     onPressed: () => instance
                         .launchInWeb('${instance.toGithub}vakinha_burguer'),
                     imageSrc: 'assets/images/vakinhaBurger.png'),
                 MyProjectsCard(
-                    title: 'Backoffice Vakinha Burguer',
+                    title: 'Backoffice Vakinha Burger',
                     description: 'backoffice_vakinha_description'.tr,
                     extendedDescription: 'backoffice_vakinha_extended_description'.tr,
                     onPressed: () => instance

@@ -10,7 +10,7 @@ class PortifolioHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      constraints: const BoxConstraints(maxHeight: 900, minHeight: 700),
+      constraints: const BoxConstraints(maxHeight: 800, minHeight: 700),
       width: context.screenWidth,
       decoration: const BoxDecoration(
         image: DecorationImage(
@@ -19,8 +19,8 @@ class PortifolioHeader extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      child: Container(
-        margin: EdgeInsets.only(top: context.percentHeight(.05)),
+      child: SizedBox(
+        // margin: EdgeInsets.only(top: context.percentHeight(.05)),
         width: 1110,
         child: Stack(
           children: const [
