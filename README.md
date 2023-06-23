@@ -26,8 +26,9 @@
   
 </p>    
 <p align="center">
-<img  src="https://user-images.githubusercontent.com/73318684/226068015-4d538b8c-520c-49fd-a0bb-83f26415590f.png" width="950" alt="Logo portifolio"/>
+<img  src="https://github.com/e-medeiros1/meu_portfolio/assets/73318684/a7cf8c6f-39cd-4821-9c6c-7eae85a7577a.png" width="950" alt="Logo portifolio"/>
 </p>
+
 
 
 
