@@ -2,9 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_portifolio/app/core/helper/size_extensios.dart';
-import 'package:my_portifolio/app/core/styles/colors_styles.dart';
-import 'package:my_portifolio/app/core/styles/text_styles.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
+import 'package:my_portfolio/app/core/styles/colors_styles.dart';
+import 'package:my_portfolio/app/core/styles/text_styles.dart';
 
 import '../../../core/widgets/social_media_row.dart';
 import 'position_text_animation.dart';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_portifolio/app/core/helper/size_extensios.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 
 import 'components/logo_and_blur_box.dart';
 
-class PortifolioHeader extends StatelessWidget {
-  const PortifolioHeader({super.key});
+class portfolioHeader extends StatelessWidget {
+  const portfolioHeader({super.key});
 
   @override
   Widget build(BuildContext context) {

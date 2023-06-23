@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:my_portifolio/app/core/helper/size_extensios.dart';
-import 'package:my_portifolio/app/core/styles/colors_styles.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
+import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 
 import '../header/components/my_dropdown_menu.dart';
 import 'components/my_menu.dart';
 
-class PortifolioMenu extends StatelessWidget {
+class portfolioMenu extends StatelessWidget {
   final ValueChanged<int> menuClicked;
-  const PortifolioMenu({super.key, required this.menuClicked});
+  const portfolioMenu({super.key, required this.menuClicked});
 
   @override
   Widget build(BuildContext context) {

@@ -1,14 +1,14 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_portifolio/app/core/helper/size_extensios.dart';
-import 'package:my_portifolio/app/core/widgets/my_outlined_button.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
+import 'package:my_portfolio/app/core/widgets/my_outlined_button.dart';
 
 import 'components/about_section.dart';
 import 'components/about_text.dart';
 
-class PortifolioAbout extends StatelessWidget {
-  const PortifolioAbout({super.key});
+class portfolioAbout extends StatelessWidget {
+  const portfolioAbout({super.key});
 
   @override
   Widget build(BuildContext context) {

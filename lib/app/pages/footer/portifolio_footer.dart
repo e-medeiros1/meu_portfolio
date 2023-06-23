@@ -1,15 +1,15 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_portifolio/app/core/helper/size_extensios.dart';
-import 'package:my_portifolio/app/core/styles/colors_styles.dart';
-import 'package:my_portifolio/app/core/widgets/my_outlined_button.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
+import 'package:my_portfolio/app/core/styles/colors_styles.dart';
+import 'package:my_portfolio/app/core/widgets/my_outlined_button.dart';
 
 import '../../core/widgets/social_media_row.dart';
 
-class PortifolioFooter extends StatelessWidget {
+class portfolioFooter extends StatelessWidget {
   final ScrollController controller;
-  const PortifolioFooter({
+  const portfolioFooter({
     Key? key,
     required this.controller,
   }) : super(key: key);

@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_portifolio/app/core/styles/colors_styles.dart';
-import 'package:my_portifolio/app/cv_view/cv_viewer.dart';
-import 'package:my_portifolio/app/pages/about/portifolio_about.dart';
-import 'package:my_portifolio/app/pages/footer/portifolio_footer.dart';
-import 'package:my_portifolio/app/pages/header/portifolio_header.dart';
-import 'package:my_portifolio/app/pages/menu/portifolio_menu.dart';
-import 'package:my_portifolio/app/pages/projects/portifolio_projects.dart';
-import 'package:my_portifolio/app/pages/stacks/portifolio_stacks.dart';
+import 'package:my_portfolio/app/core/styles/colors_styles.dart';
+import 'package:my_portfolio/app/cv_view/cv_viewer.dart';
+
 
 import 'core/translations/app_translations.dart';
+import 'pages/about/portifolio_about.dart';
+import 'pages/footer/portifolio_footer.dart';
+import 'pages/header/portifolio_header.dart';
+import 'pages/menu/portifolio_menu.dart';
+import 'pages/projects/portifolio_projects.dart';
+import 'pages/stacks/portifolio_stacks.dart';
 
-class MyPortifolio extends StatelessWidget {
-  const MyPortifolio({super.key});
+class Myportfolio extends StatelessWidget {
+  const Myportfolio({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Meu portifólio',
+      title: 'Meu portiflio',
       debugShowCheckedModeBanner: false,
       translations: AppTranslations(),
       locale: const Locale('pt', 'BR'),
@@ -58,18 +59,18 @@ class _LandingPageState extends State<LandingPage> {
         backgroundColor: context.colors.dark,
         body: Column(
           children: [
-            PortifolioMenu(menuClicked: _onMenuClicked),
+            portfolioMenu(menuClicked: _onMenuClicked),
             Expanded(
               child: SingleChildScrollView(
                 controller: scrollController,
                 scrollDirection: Axis.vertical,
                 child: Column(
                   children: [
-                    PortifolioHeader(key: globalKey1),
-                    PortifolioAbout(key: globalKey2),
-                    PortifolioStacks(key: globalKey3),
-                    PortifolioProjects(key: globalKey4),
-                    PortifolioFooter(controller: scrollController),
+                    portfolioHeader(key: globalKey1),
+                    portfolioAbout(key: globalKey2),
+                    portfolioStacks(key: globalKey3),
+                    portfolioProjects(key: globalKey4),
+                    portfolioFooter(controller: scrollController),
                   ],
                 ),
               ),

@@ -1,14 +1,14 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_portifolio/app/controller/url_launcher_controller.dart';
-import 'package:my_portifolio/app/core/helper/size_extensios.dart';
-import 'package:my_portifolio/app/core/widgets/section_title.dart';
+import 'package:my_portfolio/app/controller/url_launcher_controller.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
+import 'package:my_portfolio/app/core/widgets/section_title.dart';
 
 import 'components/my_projects_card.dart';
 
-class PortifolioProjects extends StatelessWidget {
-  const PortifolioProjects({super.key});
+class portfolioProjects extends StatelessWidget {
+  const portfolioProjects({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,9 +58,10 @@ class PortifolioProjects extends StatelessWidget {
                 MyProjectsCard(
                     title: 'Backoffice Vakinha Burger',
                     description: 'backoffice_vakinha_description'.tr,
-                    extendedDescription: 'backoffice_vakinha_extended_description'.tr,
-                    onPressed: () => instance
-                        .launchInWeb('${instance.toGithub}backoffice_vakinha_burger'),
+                    extendedDescription:
+                        'backoffice_vakinha_extended_description'.tr,
+                    onPressed: () => instance.launchInWeb(
+                        '${instance.toGithub}backoffice_vakinha_burger'),
                     imageSrc: 'assets/images/vakinhaBurger.png'),
               ],
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_portifolio/app/core/helper/size_extensios.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 
 import 'about_me.dart';
 
@@ -11,7 +11,6 @@ class AboutSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return SelectionArea(
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.012)),

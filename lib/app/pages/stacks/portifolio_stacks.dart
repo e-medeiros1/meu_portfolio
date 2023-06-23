@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:my_portifolio/app/core/helper/size_extensios.dart';
-import 'package:my_portifolio/app/core/widgets/section_title.dart';
-import 'package:my_portifolio/app/models/stacks_model.dart';
-import 'package:my_portifolio/app/pages/stacks/components/stacks_card.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
+import 'package:my_portfolio/app/core/widgets/section_title.dart';
+import 'package:my_portfolio/app/models/stacks_model.dart';
+import 'package:my_portfolio/app/pages/stacks/components/stacks_card.dart';
 
-class PortifolioStacks extends StatelessWidget {
-  const PortifolioStacks({super.key});
+class portfolioStacks extends StatelessWidget {
+  const portfolioStacks({super.key});
 
   @override
   Widget build(BuildContext context) {

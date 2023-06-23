@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:my_portifolio/app/controller/url_launcher_controller.dart';
-import 'package:my_portifolio/app/core/widgets/social_media_button.dart';
+import 'package:my_portfolio/app/controller/url_launcher_controller.dart';
+import 'package:my_portfolio/app/core/widgets/social_media_button.dart';
 
 class SocialMediaRow extends StatelessWidget {
   const SocialMediaRow({super.key});
