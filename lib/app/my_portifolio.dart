@@ -18,7 +18,7 @@ class Myportfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Meu portiflio',
+      title: 'Meu portfólio',
       debugShowCheckedModeBanner: false,
       translations: AppTranslations(),
       locale: const Locale('pt', 'BR'),

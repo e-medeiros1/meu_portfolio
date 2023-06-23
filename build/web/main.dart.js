@@ -85305,7 +85305,7 @@ r.a="assets/cv/my_cv.pdf"
 return A.alt(!0,A.aKp(new A.zF(s,0,B.ei,!0,new A.a_R(q,q,1/0,56),q),q,new A.Fu(r,1.5,!0,q)),!0)}}
 A.Uz.prototype={}
 A.Qq.prototype={
-S(a){return new A.Bs(A.a8(["/",new A.afB(),"/pdf",new A.afC()],t.N,t.Ab),"/","Meu portiflio",new A.a5F(),B.rS,!1,null)}}
+S(a){return new A.Bs(A.a8(["/",new A.afB(),"/pdf",new A.afC()],t.N,t.Ab),"/","Meu portf\xf3lio",new A.a5F(),B.rS,!1,null)}}
 A.afB.prototype={
 $1(a){return B.IC},
 $S:456}
