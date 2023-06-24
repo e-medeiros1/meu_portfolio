@@ -12,9 +12,9 @@ class AppTranslations extends Translations {
           'position3': 'Flutter',
           'about_title': 'Sobre mim',
           'about1':
-              'Encantando por tecnologia desde pequeno, logo me vi interessado em trabalhar com montagem e manutenção de computadores, com o tempo, ao ingressar na faculdade de Ciência da computação, conheci a programação e após um período de estágio como suporte técnico, decidi migrar em definitivo para o desenvolvimento de software.',
+              'Encantado por tecnologia desde pequeno, logo me vi interessado em trabalhar com montagem e manutenção de computadores, com o tempo, ao ingressar na faculdade de Ciência da computação, conheci a programação e após um período de estágio como suporte técnico, decidi migrar em definitivo para o desenvolvimento de software.',
           'about2':
-              'Nos últimos meses passei a estudar majoritariamente Dart e Flutter para criação de aplicativos híbridos, faz parte do meu escopo e já utilizei em projetos pessoais:\nLógica de programação, conceitos de POO, integração com serviços Firebase, consumo de api\'s diversas, Future, Streams, conceitos básicos de clean code e atualmente estudo os principais gerenciadores de estado utilizados no mercado de trabalho.',
+              'Nos últimos meses passei a estudar majoritariamente Dart e Flutter para criação de aplicativos híbridos. Faz parte do meu escopo e já utilizei em projetos pessoais:\nLógica de programação, conceitos de POO, integração com serviços Firebase, consumo de api\'s diversas, Future, Streams, conceitos básicos de clean code e atualmente estudo os principais gerenciadores de estado utilizados no mercado de trabalho.',
           'viewer_button': 'Ver currículo',
           'cv': 'Meu currículo',
           'projects_title': 'Projetos',
@@ -55,7 +55,7 @@ class AppTranslations extends Translations {
           'about1':
               'Enchanted by technology since I was a child, I soon found myself interested in working with computer assembly and maintenance. As time went by, when I entered a computer science college, I got acquainted with programming and after a period of internship as a technical support, I decided to migrate definitively to software development.',
           'about2':
-              'In the last few months, I started mainly studying Dart and Flutter for creating hybrid applications, it\'s part of my scope and I have already used them in personal projects: Programming logic, OOP concepts, integration with Firebase services, consumption of various API\'s, Future, Streams, basic concepts of clean code and currently I\'m studying the main state managers used in the labor market.',
+              'In the last few months, I started mainly studying Dart and Flutter for creating hybrid applications. It\'s part of my scope and I have already used them in personal projects: Programming logic, OOP concepts, integration with Firebase services, consumption of various API\'s, Future, Streams, basic concepts of clean code and currently I\'m studying the main state managers used in the labor market.',
           'viewer_button': 'See resume',
           'cv': 'My resume',
           'projects_title': 'Projects',
