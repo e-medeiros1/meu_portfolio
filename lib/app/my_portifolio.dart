@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:get/get.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 import 'package:my_portfolio/app/cv_view/cv_viewer.dart';
-
 
 import 'core/translations/app_translations.dart';
 import 'pages/about/portifolio_about.dart';
@@ -66,7 +66,12 @@ class _LandingPageState extends State<LandingPage> {
                 scrollDirection: Axis.vertical,
                 child: Column(
                   children: [
-                    portfolioHeader(key: globalKey1),
+                    portfolioHeader(key: globalKey1)
+                        .animate()
+                        .shimmer(duration: 1800.ms, color: Colors.white10)
+                        .animate() // this wraps the previous Animate in another Animate
+                        .fadeIn(duration: 1300.ms, curve: Curves.easeOutQuad)
+                        .slide(),
                     portfolioAbout(key: globalKey2),
                     portfolioStacks(key: globalKey3),
                     portfolioProjects(key: globalKey4),
