@@ -68,9 +68,7 @@ class _LandingPageState extends State<LandingPage> {
                   children: [
                     portfolioHeader(key: globalKey1)
                         .animate()
-                        .shimmer(duration: 1800.ms, color: Colors.white10)
-                        .animate() // this wraps the previous Animate in another Animate
-                        .fadeIn(duration: 1300.ms, curve: Curves.easeOutQuad)
+                        .fadeIn(duration: 2500.ms, curve: Curves.easeOutQuad)
                         .slide(),
                     portfolioAbout(key: globalKey2),
                     portfolioStacks(key: globalKey3),
