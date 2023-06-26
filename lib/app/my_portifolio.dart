@@ -68,8 +68,8 @@ class _LandingPageState extends State<LandingPage> {
                   children: [
                     portfolioHeader(key: globalKey1)
                         .animate()
-                        .fadeIn(duration: 4100.ms, curve: Curves.fastOutSlowIn)
-                        .slide(duration: 3500.ms),
+                        .fadeIn(duration: 4100.ms, curve: Curves.easeOutQuad),
+                        
                     portfolioAbout(key: globalKey2),
                     portfolioStacks(key: globalKey3),
                     portfolioProjects(key: globalKey4),
