@@ -85535,7 +85535,7 @@ o=a.Y(r).f
 if($.du==null)$.du=new A.fX()
 n=a.Y(r).f
 if($.bn==null)$.bn=new A.cP()
-n=A.c8("Eril\xe2ndio \nSantos",k,k,k,k,B.e6.avC(B.ap,n.a.b*0.1,-0.5),k,k)
+n=A.c8("Eril\xe2ndio \nSantos",k,k,k,k,B.e6.avC(B.ap,n.a.b*0.095,-0.5),k,k)
 m=A.dv("office")
 if($.du==null)$.du=new A.fX()
 l=a.Y(r).f
@@ -85589,14 +85589,17 @@ if(J.d(r.gt(r),!0)){s.f.st(0,!1)
 A.By($.cX(),B.rR)}break}},
 $S:159}
 A.SE.prototype={
-S(a){var s,r,q=null
+S(a){var s,r,q,p=null
 if($.du==null)$.du=new A.fX()
+s=t.w
+r=a.Y(s).f
 if($.bn==null)$.bn=new A.cP()
-s=B.fv.avB(B.ap,53,B.dw)
+q=B.fv.avB(B.ap,r.a.b*0.06,B.dw)
 r=A.dv("pre_position")
 if($.du==null)$.du=new A.fX()
+s=a.Y(s).f
 if($.bn==null)$.bn=new A.cP()
-return A.Bb(A.aF0(B.XG,A.b([A.aIw(A.c8(r,q,q,q,q,B.fv.kY(B.ap,53),q,q)),B.ou,new A.zz(A.b([A.arH(A.dv("position"),s),A.arH(A.dv("position1"),s),A.arH(A.dv("position2"),s),A.arH(A.dv("position3"),s)],t.u6),10,q)],t.p),0,0),1,q)}}
+return A.Bb(A.aF0(B.XG,A.b([A.aIw(A.c8(r,p,p,p,p,B.fv.kY(B.ap,s.a.b*0.06),p,p)),B.ou,new A.zz(A.b([A.arH(A.dv("position"),q),A.arH(A.dv("position1"),q),A.arH(A.dv("position2"),q),A.arH(A.dv("position3"),q)],t.u6),10,p)],t.p),0,0),1,p)}}
 A.a4W.prototype={
 S(a){var s=null,r=a.Y(t.w).f
 return A.cm(B.a0,A.dt(new A.eL(B.b9,s,B.aM,B.J,B.JW,s),s,1110),B.l,s,B.Dp,B.Dt,s,s,s,s,s,s,r.a.a)}}

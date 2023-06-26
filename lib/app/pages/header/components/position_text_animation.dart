@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 import 'package:my_portfolio/app/core/styles/text_styles.dart';
 
@@ -12,7 +13,7 @@ class PositionTextAnimation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextStyle myStyle = context.textStyles.textRegular.copyWith(
-      fontSize: 53,
+      fontSize: context.percentHeight(.06),
       fontWeight: FontWeight.bold,
       color: context.colors.light,
     );
@@ -24,7 +25,7 @@ class PositionTextAnimation extends StatelessWidget {
             child: Text(
               'pre_position'.tr,
               style: context.textStyles.textRegular.copyWith(
-                fontSize: 53,
+                fontSize: context.percentHeight(.06),
                 color: context.colors.light,
               ),
             ),
