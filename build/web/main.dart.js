@@ -85525,7 +85525,7 @@ A.aC6.prototype={
 $0(){this.a.c.jl(0,B.js,B.h2)},
 $S:0}
 A.Pl.prototype={
-S(a){var s,r,q,p,o,n,m,l=null,k=A.mg(10),j=$.at().a_Z(10,10,B.fw)
+S(a){var s,r,q,p,o,n,m,l,k=null,j=A.mg(10),i=$.at().a_Z(10,10,B.fw)
 if($.bn==null)$.bn=new A.cP()
 s=A.aa(13,217,217,217)
 r=t.w
@@ -85533,12 +85533,14 @@ q=a.Y(r).f.a.a*0.05
 p=a.Y(r).f
 o=a.Y(r).f
 if($.du==null)$.du=new A.fX()
+n=a.Y(r).f
 if($.bn==null)$.bn=new A.cP()
-n=A.c8("Eril\xe2ndio \nSantos",l,l,l,l,B.e6.avC(B.ap,80,-0.5),l,l)
+n=A.c8("Eril\xe2ndio \nSantos",k,k,k,k,B.e6.avC(B.ap,n.a.b*0.1,-0.5),k,k)
 m=A.dv("office")
 if($.du==null)$.du=new A.fX()
+l=a.Y(r).f
 if($.bn==null)$.bn=new A.cP()
-return A.aHX(k,A.aRK(A.cm(l,A.eE(A.b([B.e3,n,A.c8(m,l,l,l,l,B.fv.kY(B.ap,53),l,l),B.PO,B.e3,new A.c4(new A.az(3,a.Y(r).f.a.b*0.12,0,a.Y(r).f.a.b*0.04),B.Bv,l)],t.p),B.dr,l,B.bP,B.N),B.l,l,new A.aw(0,1110,0,p.a.b*0.7),new A.da(s,B.Gr,l,l,l,l,B.ac),l,l,l,new A.az(q,0,q,0),l,l,o.a.a),j),B.co)}}
+return A.aHX(j,A.aRK(A.cm(k,A.eE(A.b([B.e3,n,A.c8(m,k,k,k,k,B.fv.kY(B.ap,l.a.b*0.06),k,k),B.PO,B.e3,new A.c4(new A.az(3,a.Y(r).f.a.b*0.12,0,a.Y(r).f.a.b*0.04),B.Bv,k)],t.p),B.dr,k,B.bP,B.N),B.l,k,new A.aw(0,1110,0,p.a.b*0.7),new A.da(s,B.Gr,k,k,k,k,B.ac),k,k,k,new A.az(q,0,q,0),k,k,o.a.a),i),B.co)}}
 A.Cn.prototype={
 an(){return new A.Zm(B.i)}}
 A.Zm.prototype={
