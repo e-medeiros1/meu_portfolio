@@ -64,13 +64,13 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
               const SizedBox(width: 10),
               Image.asset(
                 widget.imageSrc,
-                width: 220,
+                width: 200,
                 fit: BoxFit.cover,
               ),
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.symmetric(
-                    horizontal: context.percentWidth(.025),
+                    horizontal: context.percentWidth(.021),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -80,10 +80,11 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                         padding: const EdgeInsets.symmetric(vertical: 10),
                         child: Text(
                           widget.title.toUpperCase(),
+                          textAlign: TextAlign.center,
                           style: context.textStyles.textSemiBold.copyWith(
-                              fontSize: 20,
+                              fontSize: 19.5,
                               color: context.colors.light,
-                              height: 1.5),
+                              height: 1.2),
                         ),
                       ),
                       const Spacer(),
@@ -93,7 +94,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                             : widget.extendedDescription,
                         textAlign: TextAlign.center,
                         style: context.textStyles.textRegular.copyWith(
-                            fontSize: 18, color: context.colors.light),
+                            fontSize: 17, color: context.colors.light),
                       ),
                       const Spacer(),
                       Padding(
@@ -101,13 +102,13 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                         child: MyOutlinedButton(
                             onPressed: widget.onPressed,
                             image: Image.asset('assets/images/github2.png',
-                                height: context.percentHeight(.035)),
+                                height: context.percentHeight(.033)),
                             text: 'repository_button'.tr),
                       ),
                     ],
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),

@@ -59,7 +59,7 @@ class _LandingPageState extends State<LandingPage> {
         backgroundColor: context.colors.dark,
         body: Column(
           children: [
-            portfolioMenu(menuClicked: _onMenuClicked),
+            PortfolioMenu(menuClicked: _onMenuClicked),
             Expanded(
               child: SingleChildScrollView(
                 controller: scrollController,

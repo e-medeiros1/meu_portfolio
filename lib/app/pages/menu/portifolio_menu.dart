@@ -5,9 +5,9 @@ import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 import '../header/components/my_dropdown_menu.dart';
 import 'components/my_menu.dart';
 
-class portfolioMenu extends StatelessWidget {
+class PortfolioMenu extends StatelessWidget {
   final ValueChanged<int> menuClicked;
-  const portfolioMenu({super.key, required this.menuClicked});
+  const PortfolioMenu({super.key, required this.menuClicked});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +17,7 @@ class portfolioMenu extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            const SizedBox(width: 40),
             Image.asset(
               'assets/images/myLogo.png',
               color: context.colors.light,
@@ -24,7 +25,7 @@ class portfolioMenu extends StatelessWidget {
               height: context.percentHeight(.11),
             ),
             const Spacer(),
-            if (constraints.maxWidth > 900)
+            if (constraints.maxWidth > 1000)
               MyMenu(
                 onMenuPressed: menuClicked,
               ),
