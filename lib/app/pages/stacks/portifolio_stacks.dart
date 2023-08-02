@@ -4,8 +4,8 @@ import 'package:my_portfolio/app/core/widgets/section_title.dart';
 import 'package:my_portfolio/app/models/stacks_model.dart';
 import 'package:my_portfolio/app/pages/stacks/components/stacks_card.dart';
 
-class portfolioStacks extends StatelessWidget {
-  const portfolioStacks({super.key});
+class PortfolioStacks extends StatelessWidget {
+  const PortfolioStacks({super.key});
 
   @override
   Widget build(BuildContext context) {

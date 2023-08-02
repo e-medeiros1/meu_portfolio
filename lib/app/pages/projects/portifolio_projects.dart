@@ -7,8 +7,8 @@ import 'package:my_portfolio/app/core/widgets/section_title.dart';
 
 import 'components/my_projects_card.dart';
 
-class portfolioProjects extends StatelessWidget {
-  const portfolioProjects({super.key});
+class PortfolioProjects extends StatelessWidget {
+  const PortfolioProjects({super.key});
 
   @override
   Widget build(BuildContext context) {

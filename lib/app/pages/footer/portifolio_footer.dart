@@ -7,9 +7,9 @@ import 'package:my_portfolio/app/core/widgets/my_outlined_button.dart';
 
 import '../../core/widgets/social_media_row.dart';
 
-class portfolioFooter extends StatelessWidget {
+class PortfolioFooter extends StatelessWidget {
   final ScrollController controller;
-  const portfolioFooter({
+  const PortfolioFooter({
     Key? key,
     required this.controller,
   }) : super(key: key);

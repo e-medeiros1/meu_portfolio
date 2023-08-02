@@ -7,8 +7,8 @@ import 'package:my_portfolio/app/core/widgets/my_outlined_button.dart';
 import 'components/about_section.dart';
 import 'components/about_text.dart';
 
-class portfolioAbout extends StatelessWidget {
-  const portfolioAbout({super.key});
+class PortfolioAbout extends StatelessWidget {
+  const PortfolioAbout({super.key});
 
   @override
   Widget build(BuildContext context) {

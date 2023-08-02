@@ -3,8 +3,8 @@ import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 
 import 'components/logo_and_blur_box.dart';
 
-class portfolioHeader extends StatelessWidget {
-  const portfolioHeader({super.key});
+class PortfolioHeader extends StatelessWidget {
+  const PortfolioHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
