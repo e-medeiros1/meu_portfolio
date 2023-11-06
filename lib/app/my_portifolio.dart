@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:get/get.dart';
+import 'package:my_portfolio/app/core/helper/horizontal_scroll.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 import 'package:my_portfolio/app/cv_view/cv_viewer.dart';
 
@@ -18,6 +19,7 @@ class Myportfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      scrollBehavior: HorizontalScroll(),
       title: 'Meu portfólio',
       debugShowCheckedModeBanner: false,
       translations: AppTranslations(),
@@ -69,7 +71,6 @@ class _LandingPageState extends State<LandingPage> {
                     PortfolioHeader(key: globalKey1)
                         .animate()
                         .fadeIn(duration: 4100.ms, curve: Curves.easeOutQuad),
-                        
                     PortfolioAbout(key: globalKey2),
                     PortfolioStacks(key: globalKey3),
                     PortfolioProjects(key: globalKey4),
