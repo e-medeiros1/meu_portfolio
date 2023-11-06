@@ -19,11 +19,11 @@ class PortfolioHeader extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      child: SizedBox(
+      child: const SizedBox(
         // margin: EdgeInsets.only(top: context.percentHeight(.05)),
         width: 1110,
         child: Stack(
-          children: const [
+          children: [
             LogoAndBlurBox(),
           ],
         ),
