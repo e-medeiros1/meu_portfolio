@@ -21,19 +21,17 @@ class MyOutlinedButton extends StatelessWidget {
     return FittedBox(
       child: OutlinedButton(
           style: ButtonStyle(
-            shape: MaterialStatePropertyAll(RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(50))),
+            shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(50))),
             side: MaterialStatePropertyAll(
               BorderSide(color: context.colors.light),
             ),
             padding: MaterialStatePropertyAll(
               EdgeInsets.symmetric(
-                vertical: context.percentWidth(.015),
+                vertical: 20,
                 horizontal: context.percentHeight(.028),
               ),
             ),
-            overlayColor:
-                MaterialStatePropertyAll(context.colors.light.withOpacity(.1)),
+            overlayColor: MaterialStatePropertyAll(context.colors.light.withOpacity(.1)),
           ),
           onPressed: onPressed,
           child: Row(
@@ -43,8 +41,7 @@ class MyOutlinedButton extends StatelessWidget {
               const SizedBox(width: 10),
               Text(
                 text,
-                style: context.textStyles.textBold
-                    .copyWith(color: context.colors.light, fontSize: 19),
+                style: context.textStyles.textBold.copyWith(color: context.colors.light, fontSize: 18),
               ),
             ],
           )),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class ColorsStyles {
   static ColorsStyles? _instance;
-  final _darkTheme = const Color(0xFF191919);
-  final _lightTheme = const Color(0xFFD9D9D9);
+  final _darkTheme = const Color(0xFF161616);
+  final _lightTheme = const Color(0xFFf2f2f2);
 
   ColorsStyles._();
 

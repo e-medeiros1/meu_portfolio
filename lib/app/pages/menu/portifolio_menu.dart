@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/app/core/helper/size_extensios.dart';
-import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 
 import '../header/components/my_dropdown_menu.dart';
 import 'components/my_menu.dart';
@@ -13,27 +12,31 @@ class PortfolioMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (_, constraints) => Padding(
-        padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.14)),
+        padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.10)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const SizedBox(width: 40),
             Image.asset(
-              'assets/images/myLogo.png',
-              color: context.colors.light,
+              'assets/images/pfp.png',
               fit: BoxFit.cover,
-              height: context.percentHeight(.11),
+              height: context.percentHeight(.055),
             ),
             const Spacer(),
-            if (constraints.maxWidth > 1000)
-              MyMenu(
-                onMenuPressed: menuClicked,
-              ),
-            const SizedBox(width: 40),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 5),
-              child: MyDropdownMenu(),
-            )
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                if (constraints.maxWidth > 1000)
+                  MyMenu(
+                    onMenuPressed: menuClicked,
+                  ),
+                const SizedBox(width: 40),
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10),
+                  child: MyDropdownMenu(),
+                )
+              ],
+            ),
           ],
         ),
       ),

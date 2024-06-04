@@ -34,14 +34,13 @@ class PortfolioFooter extends StatelessWidget {
                   children: [
                     MyOutlinedButton(
                         onPressed: () {
-                          controller.animateTo(0.0,
-                              duration: const Duration(seconds: 2),
-                              curve: Curves.fastLinearToSlowEaseIn);
+                          controller.animateTo(0.0, duration: const Duration(seconds: 2), curve: Curves.fastLinearToSlowEaseIn);
                         },
                         image: Icon(
                           Icons.keyboard_arrow_up,
-                          size: context.percentHeight(.04),
+                          size: context.percentHeight(.03),
                           color: context.colors.light,
+                          applyTextScaling: true,
                         ),
                         text: 'bottom_button'.tr),
                     const Spacer(),

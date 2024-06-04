@@ -47,16 +47,11 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
           height: 320,
           width: 500,
           decoration: BoxDecoration(
-              border: Border.all(
-                  color: context.colors.light.withOpacity(.1), width: .5),
+              border: Border.all(color: context.colors.light.withOpacity(.1), width: .5),
               borderRadius: BorderRadius.circular(10),
               color: context.colors.dark,
               boxShadow: [
-                if (isHover)
-                  BoxShadow(
-                      offset: const Offset(0, 40),
-                      blurRadius: 40,
-                      color: context.colors.light.withOpacity(.1)),
+                if (isHover) BoxShadow(offset: const Offset(0, 40), blurRadius: 40, color: context.colors.light.withOpacity(.1)),
               ]),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -81,28 +76,21 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                         child: Text(
                           widget.title.toUpperCase(),
                           textAlign: TextAlign.center,
-                          style: context.textStyles.textSemiBold.copyWith(
-                              fontSize: 19.5,
-                              color: context.colors.light,
-                              height: 1.2),
+                          style: context.textStyles.textSemiBold.copyWith(fontSize: 19.5, color: context.colors.light, height: 1.2),
                         ),
                       ),
                       const Spacer(),
                       Text(
-                        !isHover
-                            ? widget.description
-                            : widget.extendedDescription,
+                        !isHover ? widget.description : widget.extendedDescription,
                         textAlign: TextAlign.center,
-                        style: context.textStyles.textRegular.copyWith(
-                            fontSize: 17, color: context.colors.light),
+                        style: context.textStyles.textRegular.copyWith(fontSize: 16, color: context.colors.light),
                       ),
                       const Spacer(),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10),
                         child: MyOutlinedButton(
                             onPressed: widget.onPressed,
-                            image: Image.asset('assets/images/github2.png',
-                                height: context.percentHeight(.033)),
+                            image: Image.asset('assets/images/github2.png', height: context.percentHeight(.033)),
                             text: 'repository_button'.tr),
                       ),
                     ],

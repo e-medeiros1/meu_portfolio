@@ -21,17 +21,15 @@ class _MyDropdownMenuState extends State<MyDropdownMenu> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: context.colors.light)),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), border: Border.all(color: context.colors.light)),
       child: Obx(() => DropdownButtonHideUnderline(
             child: DropdownButton(
               elevation: 0,
               focusColor: Colors.transparent,
               dropdownColor: context.colors.dark,
               borderRadius: BorderRadius.circular(12),
-              icon: Icon(Icons.keyboard_arrow_down_rounded,
-                  color: context.colors.light),
+              underline: Container(color: context.colors.light),
+              icon: Icon(Icons.keyboard_arrow_down_rounded, color: context.colors.light),
               items: listLanguage
                   .map(
                     (e) => DropdownMenuItem(
@@ -39,7 +37,7 @@ class _MyDropdownMenuState extends State<MyDropdownMenu> {
                       child: Text(
                         e,
                         style: context.textStyles.textExtraBold.copyWith(
-                          fontSize: 18,
+                          fontSize: 17,
                           color: context.colors.light,
                         ),
                       ),

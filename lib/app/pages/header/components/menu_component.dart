@@ -15,16 +15,13 @@ class MenuItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 5),
       child: TextButton(
-          style: ButtonStyle(
-              overlayColor: MaterialStatePropertyAll(
-                  context.colors.light.withOpacity(.1))),
+          style: ButtonStyle(overlayColor: MaterialStatePropertyAll(context.colors.light.withOpacity(.1))),
           onPressed: onPressed,
           child: Text(
             buttonName,
-            style: context.textStyles.textExtraBold
-                .copyWith(color: context.colors.light, fontSize: 20),
+            style: context.textStyles.textExtraBold.copyWith(color: context.colors.light, fontSize: 20),
           )),
     );
   }
