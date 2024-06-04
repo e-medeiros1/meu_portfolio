@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/app/core/helper/size_extensios.dart';
-
-import 'components/logo_and_blur_box.dart';
+import 'package:my_portfolio/app/pages/header/components/glass_component.dart';
 
 class PortfolioHeader extends StatelessWidget {
   const PortfolioHeader({super.key});
@@ -14,8 +13,8 @@ class PortfolioHeader extends StatelessWidget {
       width: context.screenWidth,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          opacity: .3,
-          image: AssetImage('assets/images/background.jpg'),
+          opacity: .25,
+          image: AssetImage('assets/images/background1.png'),
           fit: BoxFit.cover,
         ),
       ),
@@ -24,7 +23,7 @@ class PortfolioHeader extends StatelessWidget {
         width: 1110,
         child: Stack(
           children: [
-            LogoAndBlurBox(),
+            GlassComponent(),
           ],
         ),
       ),

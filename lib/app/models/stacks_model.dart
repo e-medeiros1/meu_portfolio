@@ -14,8 +14,8 @@ List<StacksModel> stacksModel = [
   StacksModel(id: 1, image: 'assets/images/flutter.png', title: 'Flutter'),
   StacksModel(id: 2, image: 'assets/images/dart.png', title: 'Dart'),
   StacksModel(id: 3, image: 'assets/images/firebase.png', title: 'Firebase'),
-  StacksModel(
-      id: 4, image: 'assets/images/firestore.png', title: 'Cloud Firestore'),
+  StacksModel(id: 4, image: 'assets/images/firestore.png', title: 'Cloud Firestore'),
   StacksModel(id: 4, image: 'assets/images/git.png', title: 'Git'),
   StacksModel(id: 6, image: 'assets/images/github2.png', title: 'Github'),
+  StacksModel(id: 7, image: 'assets/images/flutterflow.png', title: 'Flutterflow'),
 ];
