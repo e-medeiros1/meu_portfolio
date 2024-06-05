@@ -12,8 +12,7 @@ class AboutMeTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       'about_title'.tr,
-      style: context.textStyles.textExtraBold
-          .copyWith(color: context.colors.light, fontSize: 50),
+      style: context.textStyles.textRegular.copyWith(color: context.colors.light, fontSize: 50),
     );
   }
 }

@@ -42,11 +42,11 @@ class GlassComponent extends StatelessWidget {
                 children: [
                   const Spacer(),
                   Text('Erilândio \nSantos',
-                      style: context.textStyles.textExtraBold
-                          .copyWith(fontSize: context.percentHeight(.095), color: context.colors.light, letterSpacing: -.5)),
+                      style: context.textStyles.textRegular
+                          .copyWith(fontSize: context.percentHeight(.085), color: context.colors.light, letterSpacing: -.5)),
                   Text('office'.tr,
                       style: context.textStyles.textRegular.copyWith(
-                        fontSize: context.percentHeight(.06),
+                        fontSize: context.percentHeight(.055),
                         color: context.colors.light,
                       )),
                   const PositionTextAnimation(),

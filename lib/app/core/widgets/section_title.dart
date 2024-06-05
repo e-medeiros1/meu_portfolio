@@ -19,7 +19,7 @@ class SectionTitle extends StatelessWidget {
         height: 100,
         child: Text(
           title,
-          style: context.textStyles.textExtraBold
+          style: context.textStyles.textRegular
               .copyWith(fontSize: 50, color: context.colors.light),
         ));
   }

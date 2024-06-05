@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
@@ -13,25 +14,27 @@ class PositionTextAnimation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextStyle myStyle = context.textStyles.textRegular.copyWith(
-      fontSize: context.percentHeight(.04),
+      fontSize: context.percentHeight(.035),
       fontWeight: FontWeight.bold,
       color: context.colors.light,
     );
-    return Expanded(
-      child: Wrap(
-        alignment: WrapAlignment.center,
-        children: [
-          FittedBox(
-            child: Text(
-              'pre_position'.tr,
-              style: context.textStyles.textRegular.copyWith(
-                fontSize: context.percentHeight(.04),
-                color: context.colors.light,
-              ),
+    return Wrap(
+      alignment: WrapAlignment.center,
+      children: [
+        FittedBox(
+          fit: BoxFit.contain,
+          child: Text(
+            'pre_position'.tr,
+            style: context.textStyles.textRegular.copyWith(
+              fontSize: context.percentHeight(.035),
+              color: context.colors.light,
             ),
           ),
-          const SizedBox(width: 10),
-          AnimatedTextKit(
+        ),
+        const SizedBox(width: 8),
+        FittedBox(
+          fit: BoxFit.contain,
+          child: AnimatedTextKit(
             totalRepeatCount: 10,
             animatedTexts: [
               TyperAnimatedText('position'.tr, textStyle: myStyle),
@@ -40,8 +43,8 @@ class PositionTextAnimation extends StatelessWidget {
               TyperAnimatedText('position3'.tr, textStyle: myStyle),
             ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

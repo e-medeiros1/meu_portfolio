@@ -21,7 +21,7 @@ class MenuItem extends StatelessWidget {
           onPressed: onPressed,
           child: Text(
             buttonName,
-            style: context.textStyles.textExtraBold.copyWith(color: context.colors.light, fontSize: 20),
+            style: context.textStyles.textRegular.copyWith(color: context.colors.light, fontSize: 20),
           )),
     );
   }

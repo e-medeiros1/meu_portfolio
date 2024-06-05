@@ -22,12 +22,10 @@ class _CvViewerState extends State<CvViewer> {
           elevation: 0,
           title: Text(
             'cv'.tr,
-            style: context.textStyles.textExtraBold
-                .copyWith(color: context.colors.light),
+            style: context.textStyles.textRegular.copyWith(color: context.colors.light),
           ),
         ),
-        body: SfPdfViewer.asset('assets/cv/my_cv.pdf',
-            initialZoomLevel: 1.5, enableDoubleTapZooming: true),
+        body: SfPdfViewer.asset('assets/cv/my_cv.pdf', initialZoomLevel: 1.5, enableDoubleTapZooming: true),
       ),
     );
   }

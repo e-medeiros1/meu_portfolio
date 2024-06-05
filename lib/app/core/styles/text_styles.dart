@@ -9,16 +9,12 @@ class TextStyles {
     return _instance!;
   }
 
-  String get font => 'Poppins';
-  TextStyle get textLight => const TextStyle(fontWeight: FontWeight.w300);
-  TextStyle get textRegular => const TextStyle(fontWeight: FontWeight.normal);
-  TextStyle get textMedium => const TextStyle(fontWeight: FontWeight.w500);
-  TextStyle get textSemiBold => const TextStyle(fontWeight: FontWeight.w600);
-  TextStyle get textBold => const TextStyle(fontWeight: FontWeight.bold);
-  TextStyle get textExtraBold => const TextStyle(fontWeight: FontWeight.w800);
+  String get font => 'FamiljenGrotesk';
 
-  TextStyle get textButtonLabel => textBold.copyWith(fontSize: 14);
-  TextStyle get textTitle => textExtraBold.copyWith(fontSize: 28);
+  TextStyle get textRegular => const TextStyle(fontWeight: FontWeight.normal);
+
+  TextStyle get textButtonLabel => textRegular.copyWith(fontSize: 14);
+  TextStyle get textTitle => textRegular.copyWith(fontSize: 26);
 }
 
 extension TextStylesExtension on BuildContext {

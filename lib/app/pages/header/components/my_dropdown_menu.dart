@@ -36,7 +36,7 @@ class _MyDropdownMenuState extends State<MyDropdownMenu> {
                       value: e,
                       child: Text(
                         e,
-                        style: context.textStyles.textExtraBold.copyWith(
+                        style: context.textStyles.textRegular.copyWith(
                           fontSize: 17,
                           color: context.colors.light,
                         ),

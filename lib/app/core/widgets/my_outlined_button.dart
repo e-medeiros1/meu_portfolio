@@ -28,7 +28,7 @@ class MyOutlinedButton extends StatelessWidget {
             padding: MaterialStatePropertyAll(
               EdgeInsets.symmetric(
                 vertical: 20,
-                horizontal: context.percentHeight(.028),
+                horizontal: context.percentWidth(.020),
               ),
             ),
             overlayColor: MaterialStatePropertyAll(context.colors.light.withOpacity(.1)),
@@ -41,7 +41,7 @@ class MyOutlinedButton extends StatelessWidget {
               const SizedBox(width: 10),
               Text(
                 text,
-                style: context.textStyles.textBold.copyWith(color: context.colors.light, fontSize: 18),
+                style: context.textStyles.textRegular.copyWith(color: context.colors.light, fontSize: 18),
               ),
             ],
           )),

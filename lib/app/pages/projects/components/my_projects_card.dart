@@ -44,8 +44,8 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
         hoverColor: Colors.transparent,
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          height: 320,
-          width: 500,
+          height: 300,
+          width: 450,
           decoration: BoxDecoration(
               border: Border.all(color: context.colors.light.withOpacity(.1), width: .5),
               borderRadius: BorderRadius.circular(10),
@@ -59,7 +59,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
               const SizedBox(width: 10),
               Image.asset(
                 widget.imageSrc,
-                width: 200,
+                width: context.percentHeight(.15),
                 fit: BoxFit.cover,
               ),
               Expanded(
@@ -73,10 +73,13 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: Text(
-                          widget.title.toUpperCase(),
-                          textAlign: TextAlign.center,
-                          style: context.textStyles.textSemiBold.copyWith(fontSize: 19.5, color: context.colors.light, height: 1.2),
+                        child: FittedBox(
+                          fit: BoxFit.contain,
+                          child: Text(
+                            widget.title.toUpperCase(),
+                            textAlign: TextAlign.center,
+                            style: context.textStyles.textRegular.copyWith(fontSize: 19.5, color: context.colors.light, height: 1.2),
+                          ),
                         ),
                       ),
                       const Spacer(),
