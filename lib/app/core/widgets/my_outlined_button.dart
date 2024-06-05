@@ -19,6 +19,7 @@ class MyOutlinedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FittedBox(
+      fit: BoxFit.fitHeight,
       child: OutlinedButton(
           style: ButtonStyle(
             shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(50))),
@@ -27,8 +28,8 @@ class MyOutlinedButton extends StatelessWidget {
             ),
             padding: MaterialStatePropertyAll(
               EdgeInsets.symmetric(
-                vertical: 20,
-                horizontal: context.percentWidth(.020),
+                vertical: context.percentHeight(.010),
+                horizontal: context.percentHeight(.020),
               ),
             ),
             overlayColor: MaterialStatePropertyAll(context.colors.light.withOpacity(.1)),

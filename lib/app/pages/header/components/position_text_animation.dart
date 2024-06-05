@@ -14,8 +14,8 @@ class PositionTextAnimation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextStyle myStyle = context.textStyles.textRegular.copyWith(
-      fontSize: context.percentHeight(.035),
-      fontWeight: FontWeight.bold,
+      fontSize: context.percentHeight(.030),
+      fontWeight: FontWeight.w600,
       color: context.colors.light,
     );
     return Wrap(
@@ -26,12 +26,12 @@ class PositionTextAnimation extends StatelessWidget {
           child: Text(
             'pre_position'.tr,
             style: context.textStyles.textRegular.copyWith(
-              fontSize: context.percentHeight(.035),
+              fontSize: context.percentHeight(.030),
               color: context.colors.light,
             ),
           ),
         ),
-        const SizedBox(width: 8),
+        const SizedBox(width: 7),
         FittedBox(
           fit: BoxFit.contain,
           child: AnimatedTextKit(

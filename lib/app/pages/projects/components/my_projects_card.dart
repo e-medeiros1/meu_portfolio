@@ -72,13 +72,13 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        padding: const EdgeInsets.symmetric(vertical: 15),
                         child: FittedBox(
                           fit: BoxFit.contain,
                           child: Text(
                             widget.title.toUpperCase(),
                             textAlign: TextAlign.center,
-                            style: context.textStyles.textRegular.copyWith(fontSize: 19.5, color: context.colors.light, height: 1.2),
+                            style: context.textStyles.textRegular.copyWith(fontSize: 19, color: context.colors.light, height: 1.2),
                           ),
                         ),
                       ),

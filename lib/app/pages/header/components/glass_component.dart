@@ -1,6 +1,8 @@
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
@@ -41,15 +43,24 @@ class GlassComponent extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Spacer(),
-                  Text('Erilândio \nSantos',
-                      style: context.textStyles.textRegular
-                          .copyWith(fontSize: context.percentHeight(.085), color: context.colors.light, letterSpacing: -.5)),
-                  Text('office'.tr,
-                      style: context.textStyles.textRegular.copyWith(
-                        fontSize: context.percentHeight(.055),
-                        color: context.colors.light,
-                      )),
-                  const PositionTextAnimation(),
+                  FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text('Erilândio Santos',
+                        style: context.textStyles.textRegular
+                            .copyWith(fontSize: context.percentHeight(.085), color: context.colors.light, letterSpacing: -.5)),
+                  ),
+                  FittedBox(
+                    fit: BoxFit.contain,
+                    child: Text('office'.tr,
+                        style: context.textStyles.textRegular.copyWith(
+                          fontSize: context.percentHeight(.055),
+                          color: context.colors.light,
+                        )),
+                  ),
+                  const FittedBox(
+                    fit: BoxFit.contain,
+                    child: PositionTextAnimation(),
+                  ),
                   const Spacer(),
                   Center(
                     child: Padding(
