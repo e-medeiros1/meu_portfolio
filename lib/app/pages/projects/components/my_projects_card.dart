@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_portfolio/app/core/helper/size_extensios.dart';
@@ -41,13 +42,13 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
             isHover = value;
           });
         },
-        hoverColor: Colors.transparent,
+        hoverColor: const Color(0xFF525f6d),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
           height: 300,
           width: 450,
           decoration: BoxDecoration(
-              border: Border.all(color: context.colors.light.withOpacity(.1), width: .5),
+              border: Border.all(color: const Color(0xFF506b86), width: .5),
               borderRadius: BorderRadius.circular(10),
               color: context.colors.dark,
               boxShadow: [

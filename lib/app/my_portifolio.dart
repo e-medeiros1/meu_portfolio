@@ -68,9 +68,7 @@ class _LandingPageState extends State<LandingPage> {
                 scrollDirection: Axis.vertical,
                 child: Column(
                   children: [
-                    PortfolioHeader(key: globalKey1)
-                        .animate()
-                        .fadeIn(duration: 4100.ms, curve: Curves.easeOutQuad),
+                    PortfolioHeader(key: globalKey1).animate().fadeIn(duration: 4100.ms, curve: Curves.easeOutQuad),
                     PortfolioAbout(key: globalKey2),
                     PortfolioStacks(key: globalKey3),
                     PortfolioProjects(key: globalKey4),

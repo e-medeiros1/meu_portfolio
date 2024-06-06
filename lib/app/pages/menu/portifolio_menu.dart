@@ -10,34 +10,37 @@ class PortfolioMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (_, constraints) => Padding(
-        padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.10)),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            const SizedBox(width: 40),
-            Image.asset(
-              'assets/images/pfp.png',
-              fit: BoxFit.cover,
-              height: context.percentHeight(.055),
-            ),
-            const Spacer(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                if (constraints.maxWidth > 1000)
-                  MyMenu(
-                    onMenuPressed: menuClicked,
-                  ),
-                const SizedBox(width: 40),
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
-                  child: MyDropdownMenu(),
-                )
-              ],
-            ),
-          ],
+    return Container(
+      color: const Color(0xFF232a33),
+      child: LayoutBuilder(
+        builder: (_, constraints) => Padding(
+          padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.10)),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              const SizedBox(width: 40),
+              Image.asset(
+                'assets/images/pfp.png',
+                fit: BoxFit.cover,
+                height: context.percentHeight(.055),
+              ),
+              const Spacer(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  if (constraints.maxWidth > 1000)
+                    MyMenu(
+                      onMenuPressed: menuClicked,
+                    ),
+                  const SizedBox(width: 40),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    child: MyDropdownMenu(),
+                  )
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

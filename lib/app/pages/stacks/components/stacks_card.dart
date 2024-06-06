@@ -31,14 +31,14 @@ class _StacksCardState extends State<StacksCard> {
             isHover = value;
           });
         },
-        hoverColor: Colors.transparent,
+        hoverColor: const Color(0xFF525f6d),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
           padding: EdgeInsets.symmetric(vertical: context.percentHeight(.022)),
           height: 170,
           width: 170,
           decoration: BoxDecoration(
-              border: Border.all(color: context.colors.light.withOpacity(.1), width: .5),
+              border: Border.all(color: const Color(0xFF506b86), width: .5),
               color: context.colors.dark,
               borderRadius: BorderRadius.circular(10),
               boxShadow: [

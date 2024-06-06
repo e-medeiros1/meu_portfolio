@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 import 'package:my_portfolio/app/pages/header/components/glass_component.dart';
 
@@ -18,13 +19,11 @@ class PortfolioHeader extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      child: const SizedBox(
-        // margin: EdgeInsets.only(top: context.percentHeight(.05)),
-        width: 1110,
-        child: Stack(
-          children: [
-            GlassComponent(),
-          ],
+      child: const Center(
+        child: SizedBox(
+          // margin: EdgeInsets.only(top: context.percentHeight(.05)),
+          width: 1110,
+          child: GlassComponent(),
         ),
       ),
     );
