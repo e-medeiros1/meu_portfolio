@@ -20,6 +20,7 @@ class _CvViewerState extends State<CvViewer> {
           backgroundColor: context.colors.dark,
           centerTitle: true,
           elevation: 0,
+          actionsIconTheme: IconThemeData(color: context.colors.light),
           title: Text(
             'cv'.tr,
             style: context.textStyles.textRegular.copyWith(color: context.colors.light),
