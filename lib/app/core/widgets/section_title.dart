@@ -13,14 +13,11 @@ class SectionTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.only(left: context.percentWidth(.01)),
-        // margin: EdgeInsets.symmetric(vertical: context.percentHeight(.025)),
         constraints: const BoxConstraints(maxWidth: 1110),
-        height: 100,
         child: Text(
           title,
-          style: context.textStyles.textRegular
-              .copyWith(fontSize: 50, color: context.colors.light),
+          style: context.textStyles.textRegular.copyWith(
+              fontSize: context.percentHeight(.045), color: context.colors.light),
         ));
   }
 }

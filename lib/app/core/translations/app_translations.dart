@@ -10,7 +10,7 @@ class AppTranslations extends Translations {
           'position1': 'foco',
           'position2': 'determinação',
           'position3': 'Flutter',
-          'about_title': 'Sobre mim',
+          'about_title': 'Sobre',
           'about1':
               'Encantado por tecnologia desde pequeno, logo me vi interessado em trabalhar com montagem e manutenção de computadores, com o tempo, ao ingressar na faculdade de Ciência da computação, conheci a programação e após um período de estágio como suporte técnico, decidi migrar em definitivo para o desenvolvimento de software.',
           'about2':

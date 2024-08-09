@@ -20,13 +20,15 @@ class _CvViewerState extends State<CvViewer> {
           backgroundColor: context.colors.dark,
           centerTitle: true,
           elevation: 0,
+          iconTheme: IconThemeData(color: context.colors.light),
           actionsIconTheme: IconThemeData(color: context.colors.light),
           title: Text(
             'cv'.tr,
             style: context.textStyles.textRegular.copyWith(color: context.colors.light),
           ),
         ),
-        body: SfPdfViewer.asset('assets/cv/my_cv.pdf', initialZoomLevel: 1.5, enableDoubleTapZooming: true),
+        body: SfPdfViewer.asset('assets/cv/my_cv.pdf',
+            initialZoomLevel: 1.5, enableDoubleTapZooming: true),
       ),
     );
   }

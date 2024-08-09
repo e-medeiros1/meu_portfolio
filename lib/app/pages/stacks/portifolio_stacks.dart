@@ -10,24 +10,24 @@ class PortfolioStacks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: const BoxConstraints(maxWidth: 1110),
+      width: context.percentWidth(.9),
+      padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.01)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const SectionTitle(title: 'Stacks'),
-          SizedBox(
-            width: 1110,
-            child: Wrap(
-              alignment: WrapAlignment.spaceEvenly,
-              spacing: 10,
-              runSpacing: 15,
+          Container(
+            constraints: const BoxConstraints(maxHeight: 200),
+            child: CarouselView(
+              backgroundColor: Colors.transparent,
+              itemExtent: 170,
+              shrinkExtent: 150,
               children: List.generate(
                 stacksModel.length,
                 (index) => StacksCard(index: index),
               ),
             ),
           ),
-          SizedBox(height: context.percentHeight(.1)),
         ],
       ),
     );

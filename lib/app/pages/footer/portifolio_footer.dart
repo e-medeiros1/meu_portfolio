@@ -20,33 +20,34 @@ class PortfolioFooter extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
+        width: context.percentWidth(.9),
         margin: EdgeInsets.symmetric(vertical: context.percentHeight(.05)),
-        constraints: const BoxConstraints(maxWidth: 1110),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Divider(color: colorLight.withOpacity(.6), height: 6),
             const SizedBox(height: 20),
             SizedBox(
-                width: 1110,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    MyOutlinedButton(
-                        onPressed: () {
-                          controller.animateTo(0.0, duration: const Duration(seconds: 2), curve: Curves.fastLinearToSlowEaseIn);
-                        },
-                        image: Icon(
-                          Icons.keyboard_arrow_up,
-                          size: context.percentHeight(.03),
-                          color: context.colors.light,
-                          applyTextScaling: true,
-                        ),
-                        text: 'bottom_button'.tr),
-                    const Spacer(),
-                    const SocialMediaRow(),
-                  ],
-                )),
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                MyOutlinedButton(
+                    onPressed: () {
+                      controller.animateTo(0.0,
+                          duration: const Duration(seconds: 2),
+                          curve: Curves.fastLinearToSlowEaseIn);
+                    },
+                    image: Icon(
+                      Icons.keyboard_arrow_up,
+                      size: context.percentHeight(.03),
+                      color: context.colors.light,
+                      applyTextScaling: true,
+                    ),
+                    text: 'bottom_button'.tr),
+                const Spacer(),
+                const SocialMediaRow(),
+              ],
+            )),
           ],
         ),
       ),

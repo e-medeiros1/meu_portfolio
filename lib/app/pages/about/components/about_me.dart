@@ -19,8 +19,11 @@ class AboutMeText extends StatelessWidget {
         text,
         textAlign: TextAlign.left,
         overflow: TextOverflow.fade,
-        style: context.textStyles.textRegular
-            .copyWith(color: context.colors.light, height: 2, fontSize: 18),
+        style: context.textStyles.textRegular.copyWith(
+          color: context.colors.light,
+          height: 2,
+          fontSize: context.percentHeight(.020),
+        ),
       ),
     );
   }

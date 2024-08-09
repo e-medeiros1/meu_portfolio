@@ -22,27 +22,31 @@ class MyOutlinedButton extends StatelessWidget {
       fit: BoxFit.fitHeight,
       child: OutlinedButton(
           style: ButtonStyle(
-            shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(50))),
-            side: MaterialStatePropertyAll(
+            shape: WidgetStatePropertyAll(
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(50))),
+            side: WidgetStatePropertyAll(
               BorderSide(color: context.colors.light),
             ),
-            padding: MaterialStatePropertyAll(
+            padding: WidgetStatePropertyAll(
               EdgeInsets.symmetric(
-                vertical: context.percentHeight(.010),
-                horizontal: context.percentHeight(.020),
+                vertical: context.percentHeight(.013),
+                horizontal: context.percentWidth(.01),
               ),
             ),
-            overlayColor: MaterialStatePropertyAll(context.colors.light.withOpacity(.1)),
+            overlayColor: WidgetStatePropertyAll(context.colors.light.withOpacity(.1)),
           ),
           onPressed: onPressed,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               image,
+              
               const SizedBox(width: 10),
               Text(
                 text,
-                style: context.textStyles.textRegular.copyWith(color: context.colors.light, fontSize: 18),
+                
+                style: context.textStyles.textRegular
+                    .copyWith(color: context.colors.light, fontSize: 17),
               ),
             ],
           )),

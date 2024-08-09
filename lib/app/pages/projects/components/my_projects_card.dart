@@ -35,7 +35,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
-        overlayColor: const MaterialStatePropertyAll(Colors.transparent),
+        overlayColor: const WidgetStatePropertyAll(Colors.transparent),
         onTap: () {},
         onHover: (value) {
           setState(() {
@@ -45,14 +45,18 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
         hoverColor: const Color(0xFF525f6d),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          height: 300,
+          height: 310,
           width: 450,
           decoration: BoxDecoration(
               border: Border.all(color: const Color(0xFF506b86), width: .5),
               borderRadius: BorderRadius.circular(10),
               color: context.colors.dark,
               boxShadow: [
-                if (isHover) BoxShadow(offset: const Offset(0, 40), blurRadius: 40, color: context.colors.light.withOpacity(.1)),
+                if (isHover)
+                  BoxShadow(
+                      offset: const Offset(0, 40),
+                      blurRadius: 40,
+                      color: context.colors.light.withOpacity(.1)),
               ]),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -60,26 +64,27 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
               const SizedBox(width: 10),
               Image.asset(
                 widget.imageSrc,
-                width: context.percentHeight(.15),
+                width: context.percentHeight(.18),
                 fit: BoxFit.cover,
               ),
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.symmetric(
-                    horizontal: context.percentWidth(.021),
+                    horizontal: context.percentWidth(.015),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 15),
+                        padding: const EdgeInsets.symmetric(vertical: 25),
                         child: FittedBox(
                           fit: BoxFit.contain,
                           child: Text(
                             widget.title.toUpperCase(),
                             textAlign: TextAlign.center,
-                            style: context.textStyles.textRegular.copyWith(fontSize: 19, color: context.colors.light, height: 1.2),
+                            style: context.textStyles.textRegular.copyWith(
+                                fontSize: 19, color: context.colors.light, height: 1.2),
                           ),
                         ),
                       ),
@@ -87,14 +92,16 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                       Text(
                         !isHover ? widget.description : widget.extendedDescription,
                         textAlign: TextAlign.center,
-                        style: context.textStyles.textRegular.copyWith(fontSize: 16, color: context.colors.light),
+                        style: context.textStyles.textRegular
+                            .copyWith(fontSize: 16, color: context.colors.light),
                       ),
                       const Spacer(),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10),
                         child: MyOutlinedButton(
                             onPressed: widget.onPressed,
-                            image: Image.asset('assets/images/github2.png', height: context.percentHeight(.033)),
+                            image: Image.asset('assets/images/github2.png',
+                                height: context.percentHeight(.025)),
                             text: 'repository_button'.tr),
                       ),
                     ],

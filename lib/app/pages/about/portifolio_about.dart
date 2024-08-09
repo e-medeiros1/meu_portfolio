@@ -12,25 +12,27 @@ class PortfolioAbout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(
-          vertical: context.percentHeight(.05),
-          horizontal: context.percentWidth(.01)),
-      constraints: const BoxConstraints(maxWidth: 1110),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const AboutMeTitle(),
-          const AboutSection(),
-          Center(
-            child: MyOutlinedButton(
-              onPressed: () => Get.toNamed('/pdf'),
-              image: Image.asset('assets/images/download.png',
-                  height: context.percentHeight(.035)),
-              text: 'viewer_button'.tr,
+    return SizedBox(
+      width: context.percentWidth(.9),
+      child: Container(
+        padding: EdgeInsets.symmetric(
+            vertical: context.percentHeight(.05), horizontal: context.percentWidth(.01)),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const AboutMeTitle(),
+            const AboutSection(),
+            SizedBox(height: context.percentHeight(.04)),
+            Center(
+              child: MyOutlinedButton(
+                onPressed: () => Get.toNamed('/pdf'),
+                image: Image.asset('assets/images/download.png',
+                    height: context.percentHeight(.025)),
+                text: 'viewer_button'.tr,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

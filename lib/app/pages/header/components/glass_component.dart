@@ -26,21 +26,11 @@ class GlassComponent extends StatelessWidget {
             filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
             child: Stack(
               children: [
-                // Positioned(
-                //   right: 0,
-                //   bottom: 0,
-                //   child: Lottie.asset('assets/images/Minime.json', fit: BoxFit.cover),
-                // ),
                 Container(
-                  decoration: BoxDecoration(
-                    image: const DecorationImage(
-                        alignment: Alignment.bottomRight, image: AssetImage('assets/images/profile.png'), opacity: .65),
-                    color: context.colors.light.withOpacity(0.05),
-                  ),
                   padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.05)),
                   constraints: BoxConstraints(
                     maxWidth: context.width,
-                    maxHeight: context.percentHeight(.80),
+                    maxHeight: context.percentHeight(.70),
                   ),
                   width: context.screenWidth,
                   child: Column(
@@ -51,14 +41,16 @@ class GlassComponent extends StatelessWidget {
                       FittedBox(
                         fit: BoxFit.contain,
                         child: Text('Erilândio Santos',
-                            style: context.textStyles.textRegular
-                                .copyWith(fontSize: context.percentHeight(.085), color: Colors.white70, letterSpacing: -.5)),
+                            style: context.textStyles.textRegular.copyWith(
+                                fontSize: context.percentHeight(.065),
+                                color: context.colors.light,
+                                letterSpacing: -.5)),
                       ),
                       FittedBox(
                         fit: BoxFit.contain,
                         child: Text('office'.tr,
                             style: context.textStyles.textRegular.copyWith(
-                              fontSize: context.percentHeight(.055),
+                              fontSize: context.percentHeight(.040),
                               color: context.colors.light,
                             )),
                       ),
@@ -69,7 +61,10 @@ class GlassComponent extends StatelessWidget {
                       const Spacer(),
                       Center(
                         child: Padding(
-                          padding: EdgeInsets.only(left: 3, top: context.percentHeight(.12), bottom: context.percentHeight(.04)),
+                          padding: EdgeInsets.only(
+                              left: 3,
+                              top: context.percentHeight(.12),
+                              bottom: context.percentHeight(.04)),
                           child: const SocialMediaRow(),
                         ),
                       ),

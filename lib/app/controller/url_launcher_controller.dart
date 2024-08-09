@@ -10,7 +10,7 @@ class CardController extends GetxController {
 
   final toEmail = Uri(
     scheme: 'mailto',
-    path: 'hsymetry@gmail.com',
+    path: 'erimedeiros.dev@outlook.com',
   ).obs;
 
   final toGithub = Uri(
