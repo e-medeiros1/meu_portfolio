@@ -1,0 +1,153 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.erimedeiros.my_portifolio"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\User Files\Desktop\Updated resume\meu_portfolio\android\app\src\debug\AndroidManifest.xml:7:5-66
+15-->D:\User Files\Desktop\Updated resume\meu_portfolio\android\app\src\debug\AndroidManifest.xml:7:22-64
+16
+17    <permission
+17-->[androidx.core:core:1.13.1] C:\Users\erime\.gradle\caches\transforms-3\1768fdc36769e2cfe533b8304096d50c\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+18        android:name="br.com.erimedeiros.my_portifolio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.13.1] C:\Users\erime\.gradle\caches\transforms-3\1768fdc36769e2cfe533b8304096d50c\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.13.1] C:\Users\erime\.gradle\caches\transforms-3\1768fdc36769e2cfe533b8304096d50c\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="br.com.erimedeiros.my_portifolio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.13.1] C:\Users\erime\.gradle\caches\transforms-3\1768fdc36769e2cfe533b8304096d50c\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.13.1] C:\Users\erime\.gradle\caches\transforms-3\1768fdc36769e2cfe533b8304096d50c\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+24        android:name="android.app.Application"
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.13.1] C:\Users\erime\.gradle\caches\transforms-3\1768fdc36769e2cfe533b8304096d50c\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+28        android:label="Meu Portifólio" >
+29        <activity
+30            android:name="br.com.erimedeiros.my_portifolio.MainActivity"
+31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+32            android:exported="true"
+33            android:hardwareAccelerated="true"
+34            android:launchMode="singleTop"
+35            android:theme="@style/LaunchTheme"
+36            android:windowSoftInputMode="adjustResize" >
+37
+38            <!--
+39                 Specifies an Android theme to apply to this Activity as soon as
+40                 the Android process has started. This theme is visible to the user
+41                 while the Flutter UI initializes. After that, this theme continues
+42                 to determine the Window background behind the Flutter UI.
+43            -->
+44            <meta-data
+45                android:name="io.flutter.embedding.android.NormalTheme"
+46                android:resource="@style/NormalTheme" />
+47
+48            <intent-filter>
+49                <action android:name="android.intent.action.MAIN" />
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+52            </intent-filter>
+53        </activity>
+54        <!--
+55             Don't delete the meta-data below.
+56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+57        -->
+58        <meta-data
+59            android:name="flutterEmbedding"
+60            android:value="2" />
+61
+62        <activity
+62-->[:url_launcher_android] D:\User Files\Desktop\Updated resume\meu_portfolio\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+63            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+63-->[:url_launcher_android] D:\User Files\Desktop\Updated resume\meu_portfolio\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+64            android:exported="false"
+64-->[:url_launcher_android] D:\User Files\Desktop\Updated resume\meu_portfolio\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+65            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+65-->[:url_launcher_android] D:\User Files\Desktop\Updated resume\meu_portfolio\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+66
+67        <uses-library
+67-->[androidx.window:window:1.2.0] C:\Users\erime\.gradle\caches\transforms-3\9b25c3482651236fa11439d4200397d1\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+68            android:name="androidx.window.extensions"
+68-->[androidx.window:window:1.2.0] C:\Users\erime\.gradle\caches\transforms-3\9b25c3482651236fa11439d4200397d1\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+69            android:required="false" />
+69-->[androidx.window:window:1.2.0] C:\Users\erime\.gradle\caches\transforms-3\9b25c3482651236fa11439d4200397d1\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+70        <uses-library
+70-->[androidx.window:window:1.2.0] C:\Users\erime\.gradle\caches\transforms-3\9b25c3482651236fa11439d4200397d1\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+71            android:name="androidx.window.sidecar"
+71-->[androidx.window:window:1.2.0] C:\Users\erime\.gradle\caches\transforms-3\9b25c3482651236fa11439d4200397d1\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+72            android:required="false" />
+72-->[androidx.window:window:1.2.0] C:\Users\erime\.gradle\caches\transforms-3\9b25c3482651236fa11439d4200397d1\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+73
+74        <provider
+74-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\erime\.gradle\caches\transforms-3\3efe33e61c1b397dddbadd076116b050\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+75            android:name="androidx.startup.InitializationProvider"
+75-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\erime\.gradle\caches\transforms-3\3efe33e61c1b397dddbadd076116b050\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+76            android:authorities="br.com.erimedeiros.my_portifolio.androidx-startup"
+76-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\erime\.gradle\caches\transforms-3\3efe33e61c1b397dddbadd076116b050\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+77            android:exported="false" >
+77-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\erime\.gradle\caches\transforms-3\3efe33e61c1b397dddbadd076116b050\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+78            <meta-data
+78-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\erime\.gradle\caches\transforms-3\3efe33e61c1b397dddbadd076116b050\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+79-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\erime\.gradle\caches\transforms-3\3efe33e61c1b397dddbadd076116b050\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+80                android:value="androidx.startup" />
+80-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\erime\.gradle\caches\transforms-3\3efe33e61c1b397dddbadd076116b050\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+81            <meta-data
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+83                android:value="androidx.startup" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+84        </provider>
+85
+86        <receiver
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+87            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+88            android:directBootAware="false"
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+89            android:enabled="true"
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+90            android:exported="true"
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+91            android:permission="android.permission.DUMP" >
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+93                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+96                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+99                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+102                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\erime\.gradle\caches\transforms-3\30d1d9db84b1a0f755f3c08ce7103b85\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+103            </intent-filter>
+104        </receiver>
+105    </application>
+106
+107</manifest>
