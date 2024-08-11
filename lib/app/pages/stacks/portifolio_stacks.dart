@@ -20,8 +20,8 @@ class PortfolioStacks extends StatelessWidget {
             constraints: const BoxConstraints(maxHeight: 200),
             child: CarouselView(
               backgroundColor: Colors.transparent,
-              itemExtent: 170,
-              shrinkExtent: 150,
+              itemExtent: 180,
+              shrinkExtent: 160,
               children: List.generate(
                 stacksModel.length,
                 (index) => StacksCard(index: index),

@@ -36,7 +36,7 @@ class _StacksCardState extends State<StacksCard> {
           duration: const Duration(milliseconds: 200),
           padding: EdgeInsets.symmetric(vertical: context.percentHeight(.022)),
           height: 180,
-          width: 160,
+          width: 165,
           decoration: BoxDecoration(
               border: Border.all(color: const Color(0xFF506b86), width: .5),
               color: context.colors.dark,
