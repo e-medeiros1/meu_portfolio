@@ -45,8 +45,8 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
         hoverColor: const Color(0xFF525f6d),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          height: 310,
-          width: 450,
+          height: 330,
+          width: 436,
           decoration: BoxDecoration(
               border: Border.all(color: const Color(0xFF506b86), width: .5),
               borderRadius: BorderRadius.circular(10),

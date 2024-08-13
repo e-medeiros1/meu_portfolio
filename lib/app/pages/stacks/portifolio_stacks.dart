@@ -15,7 +15,10 @@ class PortfolioStacks extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SectionTitle(title: 'Stacks'),
+          Padding(
+            padding: EdgeInsets.only(bottom: context.percentHeight(.05)),
+            child: const SectionTitle(title: 'Stacks'),
+          ),
           Container(
             constraints: const BoxConstraints(maxHeight: 200),
             child: CarouselView(

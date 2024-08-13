@@ -26,7 +26,10 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
         children: [
           Align(
             alignment: Alignment.centerLeft,
-            child: SectionTitle(title: 'projects_title'.tr),
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: context.percentHeight(.05)),
+              child: SectionTitle(title: 'projects_title'.tr),
+            ),
           ),
           SizedBox(
             child: AnimatedContainer(

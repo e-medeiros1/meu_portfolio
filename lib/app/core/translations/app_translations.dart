@@ -39,7 +39,7 @@ class AppTranslations extends Translations {
               'Sistema para gerenciamento de pedidos e produtos do Vakinha Burger',
           'backoffice_vakinha_extended_description':
               'Utilizado padrão MVC, gerência de estado com MobX, Modular para injeção e aplicando diversos conceitos de clean code',
-          'menu_about': 'Sobre mim',
+          'menu_about': 'Sobre',
           'menu_stacks': 'Stacks',
           'menu_projects': 'Projetos',
           'menu_home': 'Início',
