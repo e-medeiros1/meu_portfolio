@@ -12,13 +12,15 @@ class MyProjectsCard extends StatefulWidget {
   final String title;
   final String description;
   final String extendedDescription;
-  final VoidCallback onPressed;
   final String imageSrc;
+  final VoidCallback onTap;
+  final VoidCallback onPressed;
   const MyProjectsCard({
     Key? key,
     required this.title,
     required this.description,
     required this.extendedDescription,
+    required this.onTap,
     required this.onPressed,
     required this.imageSrc,
   }) : super(key: key);
@@ -36,7 +38,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
         overlayColor: const WidgetStatePropertyAll(Colors.transparent),
-        onTap: () {},
+        onTap: widget.onTap,
         onHover: (value) {
           setState(() {
             isHover = value;
@@ -45,8 +47,8 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
         hoverColor: const Color(0xFF525f6d),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          height: 330,
-          width: 436,
+          height: 250,
+          width: 380,
           decoration: BoxDecoration(
               border: Border.all(color: const Color(0xFF506b86), width: .5),
               borderRadius: BorderRadius.circular(10),
@@ -89,11 +91,16 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                         ),
                       ),
                       const Spacer(),
-                      Text(
-                        !isHover ? widget.description : widget.extendedDescription,
-                        textAlign: TextAlign.center,
-                        style: context.textStyles.textRegular
-                            .copyWith(fontSize: 16, color: context.colors.light),
+                      SizedBox(
+                        width: 150,
+                        child: Text(
+                          widget.description,
+                          textAlign: TextAlign.center,
+                          style: context.textStyles.textRegular.copyWith(
+                            fontSize: 15,
+                            color: context.colors.light,
+                          ),
+                        ),
                       ),
                       const Spacer(),
                       Padding(
