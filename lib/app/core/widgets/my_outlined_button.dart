@@ -18,8 +18,8 @@ class MyOutlinedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FittedBox(
-      fit: BoxFit.fitHeight,
+    return SizedBox(
+      width: context.percentHeight(.25),
       child: OutlinedButton(
           style: ButtonStyle(
             shape: WidgetStatePropertyAll(
@@ -29,26 +29,27 @@ class MyOutlinedButton extends StatelessWidget {
             ),
             padding: WidgetStatePropertyAll(
               EdgeInsets.symmetric(
-                vertical: context.percentHeight(.013),
-                horizontal: context.percentWidth(.01),
+                vertical: context.percentHeight(.015),
+                horizontal: context.percentHeight(.02),
               ),
             ),
             overlayColor: WidgetStatePropertyAll(context.colors.light.withOpacity(.1)),
           ),
           onPressed: onPressed,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              image,
-              
-              const SizedBox(width: 10),
-              Text(
-                text,
-                
-                style: context.textStyles.textRegular
-                    .copyWith(color: context.colors.light, fontSize: 17),
-              ),
-            ],
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                image,
+                const SizedBox(width: 10),
+                Text(
+                  text,
+                  style: context.textStyles.textRegular
+                      .copyWith(color: context.colors.light, fontSize: 18),
+                ),
+              ],
+            ),
           )),
     );
   }
