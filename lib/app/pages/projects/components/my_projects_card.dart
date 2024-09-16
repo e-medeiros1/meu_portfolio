@@ -13,14 +13,14 @@ class MyProjectsCard extends StatefulWidget {
   final String description;
   final String extendedDescription;
   final String imageSrc;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
   final VoidCallback onPressed;
   const MyProjectsCard({
     Key? key,
     required this.title,
     required this.description,
     required this.extendedDescription,
-    required this.onTap,
+    this.onTap,
     required this.onPressed,
     required this.imageSrc,
   }) : super(key: key);
@@ -47,8 +47,8 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
         hoverColor: const Color(0xFF525f6d),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          height: 250,
-          width: 380,
+          height: 280,
+          width: 400,
           decoration: BoxDecoration(
               border: Border.all(color: const Color(0xFF506b86), width: .5),
               borderRadius: BorderRadius.circular(10),
@@ -67,7 +67,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
               Image.asset(
                 widget.imageSrc,
                 width: context.percentHeight(.18),
-                fit: BoxFit.cover,
+                fit: BoxFit.fill,
               ),
               Expanded(
                 child: Padding(
