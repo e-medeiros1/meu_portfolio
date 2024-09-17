@@ -82,9 +82,11 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                     children: [
                       MyProjectsCard(
                         title: 'valou',
-                        description: 'rk_description'.tr,
-                        extendedDescription: 'rk_extended_description'.tr,
-                        imageSrc: 'assets/images/valou_image_1.png',
+                        description:
+                            'Controle de relações, comportamento e satisfação no ambiente de trabalho',
+                        extendedDescription:
+                            'Implementação de soluções com endpoints, controle de estado local, localization para múltiplos idiomas(Inglês, Alemão e Italiano), versionamento, manutenção e criação de telas diversas e personalização de PDF',
+                        imageSrc: 'assets/images/valou.png',
                         onPressed: () => _showProjectDetails(
                           context,
                           'valou',
