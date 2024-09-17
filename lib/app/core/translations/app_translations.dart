@@ -43,6 +43,7 @@ class AppTranslations extends Translations {
           'menu_stacks': 'Stacks',
           'menu_projects': 'Projetos',
           'menu_home': 'Início',
+          'saiba_mais': 'Saiba mais',
         },
         'en_US': {
           'office': 'Mobile developer',
@@ -84,6 +85,7 @@ class AppTranslations extends Translations {
           'menu_stacks': 'Stacks',
           'menu_projects': 'Projects',
           'menu_home': 'Home',
+          'saiba_mais': 'Learn more',
         }
       };
 }
