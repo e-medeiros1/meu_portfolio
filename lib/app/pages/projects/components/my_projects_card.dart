@@ -1,7 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 import 'package:my_portfolio/app/core/styles/text_styles.dart';
@@ -36,87 +35,74 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: InkWell(
-        overlayColor: const WidgetStatePropertyAll(Colors.transparent),
-        onTap: widget.onTap,
-        onHover: (value) {
-          setState(() {
-            isHover = value;
-          });
-        },
-        hoverColor: const Color(0xFF525f6d),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          height: 280,
-          width: 400,
-          decoration: BoxDecoration(
-              border: Border.all(color: const Color(0xFF506b86), width: .5),
-              borderRadius: BorderRadius.circular(10),
-              color: context.colors.dark,
-              boxShadow: [
-                if (isHover)
-                  BoxShadow(
-                      offset: const Offset(0, 40),
-                      blurRadius: 40,
-                      color: context.colors.light.withOpacity(.1)),
-              ]),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const SizedBox(width: 10),
-              Image.asset(
-                widget.imageSrc,
-                width: context.percentHeight(.18),
-                fit: BoxFit.fill,
-              ),
-              Expanded(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: context.percentWidth(.015),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 25),
-                        child: FittedBox(
-                          fit: BoxFit.contain,
-                          child: Text(
-                            widget.title.toUpperCase(),
-                            textAlign: TextAlign.center,
-                            style: context.textStyles.textRegular.copyWith(
-                                fontSize: 19, color: context.colors.light, height: 1.2),
-                          ),
-                        ),
-                      ),
-                      const Spacer(),
-                      SizedBox(
-                        width: 150,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        height: 280,
+        width: 400,
+        decoration: BoxDecoration(
+            border: Border.all(color: const Color(0xFF506b86), width: .5),
+            borderRadius: BorderRadius.circular(10),
+            color: context.colors.dark,
+            boxShadow: [
+              if (isHover)
+                BoxShadow(
+                    offset: const Offset(0, 40),
+                    blurRadius: 40,
+                    color: context.colors.light.withOpacity(.1)),
+            ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(width: 10),
+            Image.asset(
+              widget.imageSrc,
+              width: context.percentHeight(.18),
+              fit: BoxFit.fill,
+            ),
+            Expanded(
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: context.percentWidth(.015),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 25),
+                      child: FittedBox(
+                        fit: BoxFit.contain,
                         child: Text(
-                          widget.description,
+                          widget.title.toUpperCase(),
                           textAlign: TextAlign.center,
                           style: context.textStyles.textRegular.copyWith(
-                            fontSize: 15,
-                            color: context.colors.light,
-                          ),
+                              fontSize: 19, color: context.colors.light, height: 1.2),
                         ),
                       ),
-                      const Spacer(),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: MyOutlinedButton(
-                            onPressed: widget.onPressed,
-                            image: Image.asset('assets/images/github2.png',
-                                height: context.percentHeight(.025)),
-                            text: 'repository_button'.tr),
+                    ),
+                    const Spacer(),
+                    SizedBox(
+                      width: 150,
+                      child: Text(
+                        widget.description,
+                        textAlign: TextAlign.center,
+                        style: context.textStyles.textRegular.copyWith(
+                          fontSize: 15,
+                          color: context.colors.light,
+                        ),
                       ),
-                    ],
-                  ),
+                    ),
+                    const Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      child: MyOutlinedButton(
+                          onPressed: widget.onPressed, text: 'Saiba mais'),
+                    ),
+                  ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

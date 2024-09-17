@@ -6,13 +6,13 @@ import 'package:my_portfolio/app/core/styles/text_styles.dart';
 
 class MyOutlinedButton extends StatelessWidget {
   final VoidCallback onPressed;
-  final Widget image;
+  final Widget? image;
   final String text;
 
   const MyOutlinedButton({
     Key? key,
     required this.onPressed,
-    required this.image,
+    this.image,
     required this.text,
   }) : super(key: key);
 
@@ -41,7 +41,8 @@ class MyOutlinedButton extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                image,
+                image ??
+                    Icon(Icons.arrow_forward_ios, color: context.colors.light, size: 20),
                 const SizedBox(width: 10),
                 Text(
                   text,

@@ -1,21 +1,32 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:get/utils.dart';
 import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 import 'package:my_portfolio/app/core/styles/text_styles.dart';
 
+import '../../../core/widgets/my_outlined_button.dart';
+
 class MyProjectsDetail extends StatelessWidget {
   final String projectDescription;
   final List<String> projectImages;
+  final VoidCallback onPressed;
 
   const MyProjectsDetail({
     super.key,
+    required this.onPressed,
     required this.projectDescription,
     required this.projectImages,
   });
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      title: Align(
+        alignment: Alignment.topRight,
+        child: IconButton(
+            onPressed: Navigator.of(context).pop,
+            icon: Icon(Icons.close, color: context.colors.light)),
+      ),
       backgroundColor: context.colors.dark,
       content: SizedBox(
         width: context.screenWidth * 0.4,
@@ -57,29 +68,12 @@ class MyProjectsDetail extends StatelessWidget {
       ),
       actions: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-          child: OutlinedButton(
-            style: ButtonStyle(
-              shape: WidgetStatePropertyAll(
-                  RoundedRectangleBorder(borderRadius: BorderRadius.circular(50))),
-              side: WidgetStatePropertyAll(
-                BorderSide(color: context.colors.light),
-              ),
-              padding: WidgetStatePropertyAll(
-                EdgeInsets.symmetric(
-                  vertical: context.percentHeight(.013),
-                  horizontal: context.percentWidth(.01),
-                ),
-              ),
-              overlayColor: WidgetStatePropertyAll(context.colors.light.withOpacity(.1)),
-            ),
-            onPressed: Navigator.of(context).pop,
-            child: Text(
-              'Fechar',
-              style: context.textStyles.textRegular
-                  .copyWith(color: context.colors.light, fontSize: 17),
-            ),
-          ),
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: MyOutlinedButton(
+              onPressed: onPressed,
+              image: Image.asset('assets/images/github2.png',
+                  height: context.percentHeight(.025)),
+              text: 'repository_button'.tr),
         ),
       ],
     );
