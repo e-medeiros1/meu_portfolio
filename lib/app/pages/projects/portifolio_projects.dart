@@ -35,12 +35,18 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
     );
   }
 
-  void _showProjectDetails(BuildContext context, String projectName,
-      String projectDescription, List<String> projectImages, VoidCallback onPressed) {
+  void _showProjectDetails(
+      BuildContext context,
+      String projectName,
+      String projectDescription,
+      List<String> projectImages,
+      VoidCallback onPressed,
+      String buttonText) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return MyProjectsDetail(
+          buttonText: buttonText,
           onPressed: onPressed,
           projectDescription: projectDescription,
           projectImages: projectImages,
@@ -75,86 +81,110 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                   child: Row(
                     children: [
                       MyProjectsCard(
+                        title: 'valou',
+                        description: 'rk_description'.tr,
+                        extendedDescription: 'rk_extended_description'.tr,
+                        imageSrc: 'assets/images/valou_image_1.png',
+                        onPressed: () => _showProjectDetails(
+                          context,
+                          'valou',
+                          'rk_extended_description'.tr,
+                          [
+                            'assets/project_images/valou_image_1.png',
+                            'assets/project_images/valou_image_2.png',
+                            'assets/project_images/valou_image_3.png',
+                          ],
+                          () => instance.launchInWeb(
+                              'https://play.google.com/store/apps/details?id=com.bridgemt.goodwork.app&hl=pt_BR'),
+                          'Acesse na loja',
+                        ),
+                      ),
+                      MyProjectsCard(
                         title: 'Ruined Kingdom',
                         description: 'rk_description'.tr,
                         extendedDescription: 'rk_extended_description'.tr,
                         imageSrc: 'assets/images/ruinedKingdom.png',
                         onPressed: () => _showProjectDetails(
-                          context,
-                          'Ruined Kingdom',
-                          'rk_extended_description'.tr,
-                          [
-                            'assets/project_images/rk_image_1.png',
-                            'assets/project_images/rk_image_2.png',
-                          ],
-                          () =>
-                              instance.launchInWeb('${instance.toGithub}ruined_kingdom'),
-                        ),
+                            context,
+                            'Ruined Kingdom',
+                            'rk_extended_description'.tr,
+                            [
+                              'assets/project_images/rk_image_1.png',
+                              'assets/project_images/rk_image_2.png',
+                            ],
+                            () => instance
+                                .launchInWeb('${instance.toGithub}ruined_kingdom'),
+                            'repository_button'.tr),
                       ),
-                      MyProjectsCard(
-                          title: 'Só Saladas',
-                          description: 'saladas_description'.tr,
-                          extendedDescription: 'saladas_extended_description'.tr,
-                          onPressed: () => _showProjectDetails(
-                                context,
-                                'Só Saladas',
-                                'saladas_extended_description'.tr,
-                                [
-                                  'assets/project_images/ss_image_1.png',
-                                  'assets/project_images/ss_image_2.png',
-                                  'assets/project_images/ss_image_3.png',
-                                  'assets/project_images/ss_image_4.png',
-                                ],
-                                () => instance
-                                    .launchInWeb('${instance.toGithub}so_saladas'),
-                              ),
-                          imageSrc: 'assets/images/soSaladas.png'),
-                      MyProjectsCard(
-                          title: 'Exclusive Diary',
-                          description: 'diary_description'.tr,
-                          extendedDescription: 'diary_extended_description'.tr,
-                          onPressed: () => _showProjectDetails(
-                                context,
-                                'Exclusive Diary',
-                                'diary_extended_description'.tr,
-                                [
-                                  'assets/project_images/ed_image_1.png',
-                                  'assets/project_images/ed_image_2.png',
-                                ],
-                                () => instance
-                                    .launchInWeb('${instance.toGithub}exclusive_diary'),
-                              ),
-                          imageSrc: 'assets/images/exclusiveDiary.png'),
-                      MyProjectsCard(
-                          title: 'Vakinha Burger',
-                          description: 'vakinha_description'.tr,
-                          extendedDescription: 'vakinha_extended_description'.tr,
-                          onPressed: () => _showProjectDetails(
-                                context,
-                                'Vakinha Burger',
-                                'vakinha_extended_description'.tr,
-                                [
-                                  'assets/images/vakinhaBurger.png',
-                                ],
-                                () => instance
-                                    .launchInWeb('${instance.toGithub}vakinha_burguer'),
-                              ),
-                          imageSrc: 'assets/images/vakinhaBurger.png'),
                       MyProjectsCard(
                           title: 'Backoffice Vakinha Burger',
                           description: 'backoffice_vakinha_description'.tr,
                           extendedDescription:
                               'backoffice_vakinha_extended_description'.tr,
                           onPressed: () => _showProjectDetails(
-                                context,
-                                'Backoffice Vakinha Burger',
-                                'backoffice_vakinha_extended_description'.tr,
-                                [
-                                  'assets/images/vakinhaBurger.png',
-                                ],
-                                () => instance.launchInWeb(
-                                    '${instance.toGithub}backoffice_vakinha_burger'),
-                              ),
+                              context,
+                              'Backoffice Vakinha Burger',
+                              'backoffice_vakinha_extended_description'.tr,
+                              [
+                                'assets/project_images/bvk_image_1.png',
+                                'assets/project_images/bvk_image_2.png',
+                                'assets/project_images/bvk_image_3.png',
+                                'assets/project_images/bvk_image_4.png',
+                              ],
+                              () => instance.launchInWeb(
+                                  '${instance.toGithub}backoffice_vakinha_burger'),
+                              'repository_button'.tr),
+                          imageSrc: 'assets/images/vakinhaBurger.png'),
+                      MyProjectsCard(
+                          title: 'Só Saladas',
+                          description: 'saladas_description'.tr,
+                          extendedDescription: 'saladas_extended_description'.tr,
+                          onPressed: () => _showProjectDetails(
+                              context,
+                              'Só Saladas',
+                              'saladas_extended_description'.tr,
+                              [
+                                'assets/project_images/ss_image_1.png',
+                                'assets/project_images/ss_image_2.png',
+                                'assets/project_images/ss_image_3.png',
+                                'assets/project_images/ss_image_4.png',
+                              ],
+                              () =>
+                                  instance.launchInWeb('${instance.toGithub}so_saladas'),
+                              'repository_button'.tr),
+                          imageSrc: 'assets/images/soSaladas.png'),
+                      MyProjectsCard(
+                          title: 'Exclusive Diary',
+                          description: 'diary_description'.tr,
+                          extendedDescription: 'diary_extended_description'.tr,
+                          onPressed: () => _showProjectDetails(
+                              context,
+                              'Exclusive Diary',
+                              'diary_extended_description'.tr,
+                              [
+                                'assets/project_images/ed_image_1.png',
+                                'assets/project_images/ed_image_2.png',
+                              ],
+                              () => instance
+                                  .launchInWeb('${instance.toGithub}exclusive_diary'),
+                              'repository_button'.tr),
+                          imageSrc: 'assets/images/exclusiveDiary.png'),
+                      MyProjectsCard(
+                          title: 'Vakinha Burger',
+                          description: 'vakinha_description'.tr,
+                          extendedDescription: 'vakinha_extended_description'.tr,
+                          onPressed: () => _showProjectDetails(
+                              context,
+                              'Vakinha Burger',
+                              'vakinha_extended_description'.tr,
+                              [
+                                'assets/project_images/vk_image_1.png',
+                                'assets/project_images/vk_image_2.png',
+                                'assets/project_images/vk_image_3.png',
+                              ],
+                              () => instance
+                                  .launchInWeb('${instance.toGithub}vakinha_burguer'),
+                              'repository_button'.tr),
                           imageSrc: 'assets/images/vakinhaBurger.png'),
                     ],
                   ),
