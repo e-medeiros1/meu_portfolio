@@ -17,7 +17,7 @@ class SectionTitle extends StatelessWidget {
         child: Text(
           title,
           style: context.textStyles.textRegular.copyWith(
-              fontSize: context.percentHeight(.045), color: context.colors.light),
+              fontSize: context.percentHeight(.04), color: context.colors.light),
         ));
   }
 }
