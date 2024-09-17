@@ -31,11 +31,10 @@ class MyProjectsDetail extends StatelessWidget {
       content: SizedBox(
         width: context.screenWidth * 0.4,
         child: Column(
-          mainAxisSize: MainAxisSize.min,
           children: [
             const SizedBox(height: 16),
             SizedBox(
-              height: 280,
+              height: 340,
               child: CarouselSlider(
                 options: CarouselOptions(
                   pauseAutoPlayOnTouch: true,
@@ -48,6 +47,7 @@ class MyProjectsDetail extends StatelessWidget {
                   return Builder(
                     builder: (BuildContext context) {
                       return Container(
+                        height: 300,
                         margin: const EdgeInsets.symmetric(horizontal: 10),
                         child: Image.asset(image, fit: BoxFit.contain),
                       );

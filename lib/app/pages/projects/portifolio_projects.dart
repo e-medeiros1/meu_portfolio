@@ -84,8 +84,8 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                           'Ruined Kingdom',
                           'rk_extended_description'.tr,
                           [
-                            'assets/images/ruinedKingdom.png',
-                            'assets/images/ruinedKingdom.png',
+                            'assets/project_images/rk_image_1.png',
+                            'assets/project_images/rk_image_2.png',
                           ],
                           () =>
                               instance.launchInWeb('${instance.toGithub}ruined_kingdom'),
@@ -100,8 +100,10 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                                 'Só Saladas',
                                 'saladas_extended_description'.tr,
                                 [
-                                  'assets/images/soSaladas.png',
-                                  'assets/images/soSaladas.png',
+                                  'assets/project_images/ss_image_1.png',
+                                  'assets/project_images/ss_image_2.png',
+                                  'assets/project_images/ss_image_3.png',
+                                  'assets/project_images/ss_image_4.png',
                                 ],
                                 () => instance
                                     .launchInWeb('${instance.toGithub}so_saladas'),
@@ -116,8 +118,8 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                                 'Exclusive Diary',
                                 'diary_extended_description'.tr,
                                 [
-                                  'assets/images/exclusiveDiary.png',
-                                  'assets/images/exclusiveDiary.png',
+                                  'assets/project_images/ed_image_1.png',
+                                  'assets/project_images/ed_image_2.png',
                                 ],
                                 () => instance
                                     .launchInWeb('${instance.toGithub}exclusive_diary'),
@@ -132,7 +134,6 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                                 'Vakinha Burger',
                                 'vakinha_extended_description'.tr,
                                 [
-                                  'assets/images/vakinhaBurger.png',
                                   'assets/images/vakinhaBurger.png',
                                 ],
                                 () => instance
@@ -149,7 +150,6 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                                 'Backoffice Vakinha Burger',
                                 'backoffice_vakinha_extended_description'.tr,
                                 [
-                                  'assets/images/vakinhaBurger.png',
                                   'assets/images/vakinhaBurger.png',
                                 ],
                                 () => instance.launchInWeb(
