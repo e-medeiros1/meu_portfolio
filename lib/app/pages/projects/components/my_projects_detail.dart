@@ -29,8 +29,9 @@ class MyProjectsDetail extends StatelessWidget {
       ),
       backgroundColor: context.colors.dark,
       content: SizedBox(
-        width: context.screenWidth * 0.4,
+        width: context.screenWidth * 0.6,
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             const SizedBox(height: 16),
             SizedBox(
