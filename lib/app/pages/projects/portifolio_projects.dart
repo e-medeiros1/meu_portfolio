@@ -84,13 +84,11 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                         title: 'valou',
                         description:
                             'Controle de relações, comportamento e satisfação no ambiente de trabalho',
-                        extendedDescription:
-                            'Implementação de soluções com endpoints, controle de estado local, localization para múltiplos idiomas(Inglês, Alemão e Italiano), versionamento, manutenção e criação de telas diversas e personalização de PDF',
                         imageSrc: 'assets/images/valou_image_1.png',
                         onPressed: () => _showProjectDetails(
                           context,
                           'valou',
-                          'rk_extended_description'.tr,
+                          'Implementação de soluções com endpoints, controle de estado local, localization para múltiplos idiomas(Inglês, Alemão e Italiano), versionamento, manutenção e criação de telas diversas e personalização de PDF',
                           [
                             'assets/project_images/valou_image_1.png',
                             'assets/project_images/valou_image_2.png',
@@ -104,7 +102,6 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                       MyProjectsCard(
                         title: 'Ruined Kingdom',
                         description: 'rk_description'.tr,
-                        extendedDescription: 'rk_extended_description'.tr,
                         imageSrc: 'assets/images/ruinedKingdom.png',
                         onPressed: () => _showProjectDetails(
                             context,
@@ -121,8 +118,6 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                       MyProjectsCard(
                           title: 'Backoffice Vakinha Burger',
                           description: 'backoffice_vakinha_description'.tr,
-                          extendedDescription:
-                              'backoffice_vakinha_extended_description'.tr,
                           onPressed: () => _showProjectDetails(
                               context,
                               'Backoffice Vakinha Burger',
@@ -140,7 +135,6 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                       MyProjectsCard(
                           title: 'Só Saladas',
                           description: 'saladas_description'.tr,
-                          extendedDescription: 'saladas_extended_description'.tr,
                           onPressed: () => _showProjectDetails(
                               context,
                               'Só Saladas',
@@ -158,7 +152,6 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                       MyProjectsCard(
                           title: 'Exclusive Diary',
                           description: 'diary_description'.tr,
-                          extendedDescription: 'diary_extended_description'.tr,
                           onPressed: () => _showProjectDetails(
                               context,
                               'Exclusive Diary',
@@ -174,7 +167,6 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
                       MyProjectsCard(
                           title: 'Vakinha Burger',
                           description: 'vakinha_description'.tr,
-                          extendedDescription: 'vakinha_extended_description'.tr,
                           onPressed: () => _showProjectDetails(
                               context,
                               'Vakinha Burger',

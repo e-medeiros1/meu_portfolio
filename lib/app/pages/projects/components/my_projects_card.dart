@@ -11,7 +11,7 @@ import '../../../core/widgets/my_outlined_button.dart';
 class MyProjectsCard extends StatefulWidget {
   final String title;
   final String description;
-  final String extendedDescription;
+
   final String imageSrc;
   final VoidCallback? onTap;
   final VoidCallback onPressed;
@@ -19,7 +19,6 @@ class MyProjectsCard extends StatefulWidget {
     Key? key,
     required this.title,
     required this.description,
-    required this.extendedDescription,
     this.onTap,
     required this.onPressed,
     required this.imageSrc,
