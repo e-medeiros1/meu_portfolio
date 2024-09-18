@@ -21,7 +21,7 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
 
   void _scrollLeft() {
     _scrollController.animateTo(
-      _scrollController.offset - 550,
+      _scrollController.offset - 500,
       duration: const Duration(milliseconds: 300),
       curve: Curves.easeInOut,
     );
@@ -29,7 +29,7 @@ class _PortfolioProjectsState extends State<PortfolioProjects> {
 
   void _scrollRight() {
     _scrollController.animateTo(
-      _scrollController.offset + 550,
+      _scrollController.offset + 500,
       duration: const Duration(milliseconds: 300),
       curve: Curves.easeInOut,
     );
