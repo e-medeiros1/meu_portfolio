@@ -22,6 +22,7 @@ class PortfolioStacks extends StatelessWidget {
             ),
           ),
           Container(
+            padding: EdgeInsets.symmetric(horizontal: context.percentWidth(.01)),
             alignment: Alignment.center,
             constraints: const BoxConstraints(maxHeight: 200),
             child: CarouselView(
