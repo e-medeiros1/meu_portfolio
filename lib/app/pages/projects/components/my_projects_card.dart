@@ -81,16 +81,19 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                       ),
                     ),
                     const Spacer(),
-                    FittedBox(
+                    FittedBox( 
+                      fit: BoxFit.contain,
+                      child: FittedBox(
                       fit: BoxFit.contain,
                       child: SizedBox(
-                        width: 150,
-                        child: Text(
-                          widget.description,
-                          textAlign: TextAlign.center,
-                          style: context.textStyles.textRegular.copyWith(
-                            fontSize: 15,
-                            color: context.colors.light,
+                          width: 150,
+                          child: Text(
+                            widget.description,
+                            textAlign: TextAlign.center,
+                            style: context.textStyles.textRegular.copyWith(
+                              fontSize: 15,
+                              color: context.colors.light,
+                          ),
                           ),
                         ),
                       ),
