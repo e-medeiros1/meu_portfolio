@@ -38,7 +38,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         height: 280,
-        width: 400,
+        width: 360,
         decoration: BoxDecoration(
             border: Border.all(color: const Color(0xFF506b86), width: .5),
             borderRadius: BorderRadius.circular(10),
@@ -57,7 +57,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
             Image.asset(
               widget.imageSrc,
               width: context.percentHeight(.18),
-              fit: BoxFit.fill,
+              fit: BoxFit.contain,
             ),
             Expanded(
               child: Padding(
@@ -81,14 +81,17 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                       ),
                     ),
                     const Spacer(),
-                    SizedBox(
-                      width: 150,
-                      child: Text(
-                        widget.description,
-                        textAlign: TextAlign.center,
-                        style: context.textStyles.textRegular.copyWith(
-                          fontSize: 15,
-                          color: context.colors.light,
+                    FittedBox( 
+                      fit: BoxFit.contain,
+                      child: SizedBox(
+                        width: 150,
+                        child: Text(
+                          widget.description,
+                          textAlign: TextAlign.center,
+                          style: context.textStyles.textRegular.copyWith(
+                            fontSize: 15,
+                            color: context.colors.light,
+                          ),
                         ),
                       ),
                     ),
