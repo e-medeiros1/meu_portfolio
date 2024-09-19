@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/utils.dart';
-import 'package:my_portfolio/app/core/helper/size_extensios.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
 import 'package:my_portfolio/app/core/styles/text_styles.dart';
 
@@ -30,82 +29,93 @@ class MyProjectsCard extends StatefulWidget {
 
 class _MyProjectsCardState extends State<MyProjectsCard> {
   bool isHover = false;
-
   @override
   Widget build(BuildContext context) {
-    return FittedBox(
-      fit: BoxFit.contain,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          height: 280,
-          width: 380,
-          decoration: BoxDecoration(
-              border: Border.all(color: const Color(0xFF506b86), width: .5),
-              borderRadius: BorderRadius.circular(10),
-              color: context.colors.dark,
-              boxShadow: [
-                if (isHover)
-                  BoxShadow(
-                      offset: const Offset(0, 40),
-                      blurRadius: 40,
-                      color: context.colors.light.withOpacity(.1)),
-              ]),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const SizedBox(width: 15),
-              Image.asset(
-                widget.imageSrc,
-                width: context.percentHeight(.16),
-                fit: BoxFit.contain,
-              ),
-              Expanded(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: context.percentWidth(.015),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final cardWidth = constraints.maxWidth < 400 ? constraints.maxWidth : 380.0;
+        return Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: AspectRatio(
+            aspectRatio: 380 / 280,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              width: cardWidth,
+              decoration: BoxDecoration(
+                  border: Border.all(color: const Color(0xFF506b86), width: .5),
+                  borderRadius: BorderRadius.circular(10),
+                  color: context.colors.dark,
+                  boxShadow: [
+                    if (isHover)
+                      BoxShadow(
+                          offset: const Offset(0, 40),
+                          blurRadius: 40,
+                          color: context.colors.light.withOpacity(.1)),
+                  ]),
+              child: Row(
+                children: [
+                  SizedBox(width: cardWidth * 0.04),
+                  Image.asset(
+                    widget.imageSrc,
+                    width: cardWidth * 0.25,
+                    fit: BoxFit.contain,
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 25),
-                        child: Text(
-                          widget.title.toUpperCase(),
-                          textAlign: TextAlign.center,
-                          style: context.textStyles.textRegular.copyWith(
-                              fontSize: 19, color: context.colors.light, height: 1.2),
-                        ),
-                      ),
-                      const Spacer(),
-                      SizedBox(
-                        width: 155,
-                        child: Text(
-                          widget.description,
-                          textAlign: TextAlign.center,
-                          style: context.textStyles.textRegular.copyWith(
-                            fontSize: 15,
-                            color: context.colors.light,
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: cardWidth * 0.04),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Flexible(
+                            flex: 2,
+                            child: Center(
+                              child: Text(
+                                widget.title.toUpperCase(),
+                                textAlign: TextAlign.center,
+                                style: context.textStyles.textRegular.copyWith(
+                                  fontSize: 16,
+                                  color: context.colors.light,
+                                  height: 1.2,
+                                ),
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ),
                           ),
-                        ),
+                          Flexible(
+                            flex: 3,
+                            child: Text(
+                              widget.description,
+                              textAlign: TextAlign.center,
+                              style: context.textStyles.textRegular.copyWith(
+                                fontSize: 14,
+                                color: context.colors.light,
+                              ),
+                              maxLines: 3,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                          Flexible(
+                            flex: 2,
+                            child: Center(
+                              child: MyOutlinedButton(
+                                onPressed: widget.onPressed,
+                                text: 'saiba_mais'.tr,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                      const Spacer(),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: MyOutlinedButton(
-                            onPressed: widget.onPressed, text: 'saiba_mais'.tr),
-                      ),
-                    ],
+                    ),
                   ),
-                ),
+                  SizedBox(width: cardWidth * 0.04),
+                ],
               ),
-              const SizedBox(width: 15),
-            ],
+            ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 }
