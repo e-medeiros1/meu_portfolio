@@ -33,11 +33,11 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        final cardWidth = constraints.maxWidth < 400 ? constraints.maxWidth : 380.0;
+        final cardWidth = constraints.maxWidth < 380 ? constraints.maxWidth : 360.0;
         return Padding(
           padding: const EdgeInsets.all(8.0),
           child: AspectRatio(
-            aspectRatio: 380 / 280,
+            aspectRatio: 330 / 260,
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 200),
               width: cardWidth,
@@ -54,15 +54,15 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                   ]),
               child: Row(
                 children: [
-                  SizedBox(width: cardWidth * 0.04),
+                  SizedBox(width: cardWidth * 0.025),
                   Image.asset(
                     widget.imageSrc,
-                    width: cardWidth * 0.25,
+                    width: cardWidth * 0.30,
                     fit: BoxFit.contain,
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: cardWidth * 0.04),
+                      padding: EdgeInsets.symmetric(horizontal: cardWidth * 0.03),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -76,7 +76,7 @@ class _MyProjectsCardState extends State<MyProjectsCard> {
                                 style: context.textStyles.textRegular.copyWith(
                                   fontSize: 16,
                                   color: context.colors.light,
-                                  height: 1.2,
+                                  height: 1.1,
                                 ),
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,

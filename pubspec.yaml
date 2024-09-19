@@ -43,6 +43,7 @@ dependencies:
   flutter_animate: ^4.2.0
   lottie: ^3.0.0
   carousel_slider: ^5.0.0
+  flutter_staggered_animations: ^1.1.1
 
 
 

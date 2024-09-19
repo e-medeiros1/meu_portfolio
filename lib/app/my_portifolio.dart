@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:get/get.dart';
 import 'package:my_portfolio/app/core/helper/horizontal_scroll.dart';
 import 'package:my_portfolio/app/core/styles/colors_styles.dart';
@@ -63,17 +63,27 @@ class _LandingPageState extends State<LandingPage> {
           children: [
             PortfolioMenu(menuClicked: _onMenuClicked),
             Expanded(
-              child: SingleChildScrollView(
-                controller: scrollController,
-                scrollDirection: Axis.vertical,
-                child: Column(
-                  children: [
-                    PortfolioHeader(key: globalKey1).animate().fadeIn(duration: 4100.ms, curve: Curves.easeOutQuad),
-                    PortfolioAbout(key: globalKey2),
-                    PortfolioStacks(key: globalKey3),
-                    PortfolioProjects(key: globalKey4),
-                    PortfolioFooter(controller: scrollController),
-                  ],
+              child: AnimationLimiter(
+                child: SingleChildScrollView(
+                  controller: scrollController,
+                  child: Column(
+                    children: AnimationConfiguration.toStaggeredList(
+                      duration: const Duration(milliseconds: 800),
+                      childAnimationBuilder: (widget) => SlideAnimation(
+                        verticalOffset: 50.0,
+                        child: FadeInAnimation(
+                          child: widget,
+                        ),
+                      ),
+                      children: [
+                        PortfolioHeader(key: globalKey1),
+                        PortfolioAbout(key: globalKey2),
+                        PortfolioStacks(key: globalKey3),
+                        PortfolioProjects(key: globalKey4),
+                        PortfolioFooter(controller: scrollController),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
